@@ -4,8 +4,17 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
 
 ## Current state
 - Status: **key frames v2 sent** (2026-10-29), minimal redesign after Rachit's note on v1 ("phone much more minimal, everything looks chaotic"): `change06_twitter_feed/keyframes/v2/` (sheet `_sheet_v2.png`). v1 is superseded (kept in `keyframes/v1/`).
-- **540p preview v1 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v1_540p.mp4`, 712 frames = 29.7 s @ 23.976, real video playback in the posts, VO line 10 at the start, Mike's tight cut with his audio (normalised from -35 to -18.6 dB mean). Timeline source: `change06_twitter_feed/source/src/timeline.ts`.
-- Next: Rachit judges motion + tweet selection, then the final ProRes 4444 alpha render.
+- **540p preview v2 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v2_540p.mp4` (784 f = 32.7 s @ 23.976). Highlight colour check: `previews/yellow_highlight_check.png` (#EEFF3A, waiting for Rachit's OK or his colour code).
+- Next: Rachit's notes on v2 + more posts from him, then the final ProRes 4444 alpha render.
+
+## Rachit's notes on preview v1 (2026-10-29) and what v2 does
+- "The swipe up between posts looks cheap; I want the smooth scroll through Twitter; perfectly eased in and out." The v1 scroll used a fast-start "catch" curve (one-frame jumps of 38-81 grey levels, measured). v2: every scroll is a symmetric ease in-out (bezier 0.7,0,0.3,1, about 18 f). Mid-scroll the camera eases out 9% and the passing posts come up to about 40% (feel the feed, ref02/ref03). Vertical motion blur follows scroll speed, capped low. The frame-diff scan now shows smooth ramps only; the only hard jumps are the planned 2-frame flashes.
+- "The opening looks cheap (post in the bottom half, X icon up top)." v2 opens on the X launch screen: the logo alone, centred on black, under "Every time you open Twitter". It leaves first, then the first post racks into focus (blur 14 to 0) at reading size, centred. No phone or header on screen.
+- "White highlight looks cheap, use a little neon yellow." #EEFF3A marker, shorter than the line box, soft 6-pt leading edge while it sweeps, letters turn black only behind the solid part.
+- "Focus change blur looks abrupt." Posts leaving focus fade and soft-blur (2.5 pt) across the whole scroll; text-post media recedes to 22% while the words are read ("text first").
+- Charlie ("I turned Claude into an entire company"): no highlight, a brief stop only. Finn (AI-made video): text highlight only, no push into the video. My reading of the two notes; Rachit to confirm.
+- Order: ... Finn, overload, "It's over." (text, then its video), "Software is dead" (REA post) is the last word.
+- Glitch fixes: dims that snapped in one frame now ease over 8 f; video posters are now the first frame of the exact segment that plays, so starts don't jump.
 - All tweets pulled from X (text, counts, avatars, media) into `change06_twitter_feed/tweets/<id>/`. Network was opened to full internet on 2026-10-29.
 
 ## Design system v2: minimal (Rachit, 2026-10-29)

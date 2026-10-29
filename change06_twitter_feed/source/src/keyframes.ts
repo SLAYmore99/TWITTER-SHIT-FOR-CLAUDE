@@ -3,13 +3,13 @@ import { FeedItem } from "./ui/Phone";
 import { PostKey, PostLook } from "./ui/Post";
 
 // One continuous feed, in scroll order.
-export const ORDER: PostKey[] = ["noisy", "viipin", "charlie", "mike", "deronin", "nero", "finn", "intcyber", "olehmann", "humza", "himanshu"];
+export const ORDER: PostKey[] = ["noisy", "viipin", "charlie", "mike", "deronin", "nero", "finn", "olehmann", "humza", "himanshu", "intcyber"];
 
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {
   noisy: { lit: "They built an automated business making $2.4M with Opus 5 at 18", bar: "making $2.4M with Opus 5 at 18", barColor: "white" },
   viipin: { lit: "Even a 14-year-old can do it.", bar: "Even a 14-year-old can do it.", barColor: "white" },
-  charlie: { lit: "I turned Claude into an entire company.", bar: "I turned Claude into an entire company.", barColor: "orange" },
+  charlie: { lit: "I turned Claude into an entire company." }, // Rachit: no highlight on this one
   mike: { lit: "how I as a CEO am using Claude Code as my AI Chief of Staff" },
   deronin: { bar: "I run a $40k MRR agency with zero employees" },
   nero: { lit: "motionvideo is a collection of motion designs people build with Claude Opus 5.5", bar: "motion designs people build with Claude Opus 5.5", barColor: "orange" },

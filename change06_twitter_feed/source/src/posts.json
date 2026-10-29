@@ -13,7 +13,7 @@
   "bookmarks": "706",
   "media": {
    "type": "video",
-   "src": "media/noisy_poster.jpg",
+   "src": "media/play_noisy.jpg",
    "w": 1280,
    "h": 720,
    "dur": "1:08:49"
@@ -54,7 +54,7 @@
   "bookmarks": "9.2K",
   "media": {
    "type": "video",
-   "src": "media/charlie_full.jpg",
+   "src": "media/play_charlie.jpg",
    "w": 800,
    "h": 1000,
    "dur": "GIF"
@@ -75,7 +75,7 @@
   "bookmarks": "4.5K",
   "media": {
    "type": "video",
-   "src": "media/mike_poster.jpg",
+   "src": "media/play_mike_tight.jpg",
    "w": 1660,
    "h": 1080,
    "dur": "19:22"
@@ -118,7 +118,7 @@
   "bookmarks": "938",
   "media": {
    "type": "video",
-   "src": "media/nero_motion.jpg",
+   "src": "media/play_nero.jpg",
    "w": 1676,
    "h": 1080,
    "dur": "0:28"
@@ -139,7 +139,7 @@
   "bookmarks": "5.2K",
   "media": {
    "type": "video",
-   "src": "media/finn_earth.jpg",
+   "src": "media/play_finn.jpg",
    "w": 1920,
    "h": 1080,
    "dur": "0:30"
@@ -180,7 +180,7 @@
   "bookmarks": "3.4K",
   "media": {
    "type": "video",
-   "src": "media/himanshu_poster.jpg",
+   "src": "media/play_himanshu.jpg",
    "w": 1920,
    "h": 1080,
    "dur": "0:37"

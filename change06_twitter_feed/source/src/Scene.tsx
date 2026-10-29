@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { FONT } from "./ui/layout";
+import { XLogo } from "./ui/icons";
 import { FeedItem, feedOffsets, HEADER_H, Phone } from "./ui/Phone";
 import { CW, POSTS, PostKey } from "./ui/Post";
 
@@ -21,6 +22,9 @@ export type SceneState = {
   streak?: number;
   newPosts?: string;
   flash?: string; // single-frame overlay phrase (overload)
+  world?: { opacity: number; blur: number }; // the whole feed (rack-focus in)
+  splash?: { opacity: number; scale: number }; // X launch screen
+  pill?: string; // new-posts pill, fixed at the top of frame
 };
 
 // Screen point of a post part, given the scroll. part: text | media | post
@@ -53,7 +57,8 @@ export const Scene: React.FC<{ s: SceneState; label?: string }> = ({ s, label })
           top: 540,
           transformOrigin: "0 0",
           transform: `perspective(2600px) rotateX(${cam.rx ?? 0}deg) rotateY(${cam.ry ?? 0}deg)`,
-          filter: cam.blur ? `blur(${cam.blur}px)` : undefined,
+          opacity: s.world?.opacity ?? 1,
+          filter: (s.world?.blur ?? cam.blur) ? `blur(${s.world?.blur ?? cam.blur}px)` : undefined,
         }}
       >
         {/* zoom (not scale) so the UI is laid out at full res and stays crisp on punch-ins */}
@@ -62,6 +67,18 @@ export const Scene: React.FC<{ s: SceneState; label?: string }> = ({ s, label })
           <Phone items={s.items} scroll={s.scroll} screenOn={s.screenOn} streak={s.streak} newPosts={s.newPosts} />
         </div>
       </div>
+      {s.splash && s.splash.opacity > 0 && (
+        <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+          <div style={{ opacity: s.splash.opacity, scale: String(s.splash.scale) }}>
+            <XLogo size={112} />
+          </div>
+        </AbsoluteFill>
+      )}
+      {s.pill && (
+        <div style={{ position: "absolute", top: 96, left: "50%", translate: "-50% 0", padding: "12px 26px", borderRadius: 40, background: "rgba(255,255,255,0.94)", color: "#000", font: `600 30px ${FONT}`, whiteSpace: "nowrap" }}>
+          ↑ {s.pill}
+        </div>
+      )}
       {s.flash && (
         <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", background: "rgba(0,0,0,0.55)" }}>
           <div style={{ font: `800 120px/1 ${FONT}`, color: "#fff", letterSpacing: -3, textShadow: "0 0 24px rgba(255,255,255,0.45)" }}>{s.flash}</div>

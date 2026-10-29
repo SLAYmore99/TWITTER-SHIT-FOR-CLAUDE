@@ -33,6 +33,7 @@ export type PostLook = {
   maxLines?: number;
   noMedia?: boolean;
   mediaOpacity?: number; // media recedes while its text is held
+  blur?: number; // pts, posts out of focus go soft
   fade?: number; // whole-post opacity (posts that are not in focus recede)
 };
 
@@ -92,13 +93,21 @@ const MarkedText: React.FC<{
         const w = Math.max(0, Math.min(len, left));
         left -= len;
         if (w <= 0) return null;
+        const col = orange ? C.claude : C.hl;
+        const rgb = orange ? "217,119,87" : C.hlRgb;
+        const sweeping = w < len;
+        // marker, not a box: a bit shorter than the line, soft leading edge while it moves
         return (
-          <div key={i} style={{ position: "absolute", left: b.x0 - 2.5, top: b.l.y + 0.5, width: w + 5, height: BODY.lineH - 0.5, overflow: "hidden", borderRadius: 2,
-            background: orange ? C.claude : "#F2F2F2", boxShadow: orange ? "0 0 10px rgba(217,119,87,0.55)" : "0 0 10px rgba(255,255,255,0.35)" }}>
-            {b.ws.map((wd, wi) => (
-              <span key={wi} style={{ position: "absolute", left: wd.x - b.x0 + 2.5, top: -0.5, font, color: orange ? "#140805" : "#000", whiteSpace: "pre" }}>{wd.text}</span>
-            ))}
-          </div>
+          <React.Fragment key={i}>
+            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y + 1.5, width: w + 6 + (sweeping ? 5 : 0), height: BODY.lineH - 2.5, borderRadius: 2.5,
+              background: sweeping ? `linear-gradient(90deg, ${col} 0, ${col} calc(100% - 6px), rgba(${rgb},0) 100%)` : col,
+              boxShadow: `0 0 14px rgba(${rgb},0.28)` }} />
+            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y, width: w + 3, height: BODY.lineH, overflow: "hidden" }}>
+              {b.ws.map((wd, wi) => (
+                <span key={wi} style={{ position: "absolute", left: wd.x - b.x0 + 3, top: 0, font, color: orange ? "#140805" : "#0B0B00", whiteSpace: "pre" }}>{wd.text}</span>
+              ))}
+            </div>
+          </React.Fragment>
         );
       })}
     </>
@@ -173,7 +182,7 @@ export const Post: React.FC<{ k: PostKey; look?: PostLook }> = ({ k, look = {} }
   const row = { font: `400 15px/20px ${FONT}` };
   const acts: [React.FC, string][] = [[Reply, p.replies], [Repost, p.reposts], [Like, p.likes], [Views, p.views]];
   return (
-    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: C.bg, opacity: look.fade ?? 1 }}>
+    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: C.bg, opacity: look.fade ?? 1, filter: look.blur ? `blur(${look.blur}px)` : undefined }}>
       <Img src={staticFile(p.avatar)} style={{ position: "absolute", left: PAD, top: 12, width: AV, height: AV, borderRadius: AV / 2, opacity: dimOpacity }} />
       <div style={{ position: "absolute", left: CX, top: 12, width: CW, height: 20, display: "flex", alignItems: "center", gap: 2, whiteSpace: "nowrap", opacity: dimOpacity }}>
         <span style={{ ...row, fontWeight: 700, color: C.text, overflow: "hidden", textOverflow: "ellipsis", maxWidth: 170 }}>{p.name}</span>

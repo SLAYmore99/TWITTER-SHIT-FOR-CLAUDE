@@ -8,6 +8,8 @@ export const C = {
   line: "#2F3336",
   blue: "#1D9BF0",
   claude: "#D97757",
+  hl: "#EEFF3A", // neon yellow highlighter
+  hlRgb: "238,255,58",
 };
 
 type P = { size?: number; color?: string };
