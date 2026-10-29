@@ -16,7 +16,12 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
   - Highlight glitches found by measuring yellow area per frame: the marker swept while the post was still settling and sharpening (wobble), the scroll into a video started the frame the sweep ended (smear), and the marker's soft edge snapped 5 pt narrower when it finished. Fixes: the marker now starts at 0.8 of the scroll, once the post is settled and fully sharp; the soft edge shrinks away over the last 12% of the sweep; black letters are clipped to the solid part only; each highlight holds about 14 f after the sweep (0.6 s, about 1.1 s readable in all). Measured after: smooth 12-f sweep, then a constant hold (0% wobble).
   - Calmer scrolls: curve = 45% ref03 (keeps its long soft settle) + 55% cubic-bezier(0.45,0,0.2,1); peak speed 2.78x average instead of 3.53x, so 21-33% lower per scroll; one filler fewer before "Software is dead"; motion blur capped at 7 pt (was 24).
   - Timings now live in `source/src/beats.json`, read by both `timeline.ts` and `sfx.py`, so the SFX always follows the picture.
-- Next: Rachit's notes on v9, then the final ProRes 4444 alpha render.
+- **HD render v9 (2026-10-29):** full-res sources re-encoded (eye 1920, motion 1676, It's over 1920, spectrum 1080 wide, CRF 15). Delivered:
+  - `change06_twitter_feed/final/twitter_feed_v9_1080p.mp4`: 1920x1080, 23.976 fps, 287 f, H.264 CRF 14, VO line 10 + SFX, on black.
+  - `twitter_feed_v9_alpha_prores4444.mov` (sent in chat, not in git: 380 MB): ProRes 4444 with alpha (yuva444p12le), no audio, no background (corners alpha 0, about 59% fully clear); posts and cards are drawn without the black behind them. Sent as 4 binary parts (.part0-3) + `JOIN_ON_WINDOWS.bat` (copy /b, then certutil MD5); md5 b82438d3dcde625965509d11878cde61, rejoin checked here.
+  - `final/twitter_feed_v9_sfx_stem.wav`: SFX on its own track (48 kHz, 24-bit).
+  - Font is still Inter (no Chirp supplied).
+- Next: Rachit drops it into the edit; option 2 later (option 1 = git tag `option1-v8b` + this commit).
 
 ## Rachit's notes on preview v1 (2026-10-29) and what v2 does
 - "The swipe up between posts looks cheap; I want the smooth scroll through Twitter; perfectly eased in and out." The v1 scroll used a fast-start "catch" curve (one-frame jumps of 38-81 grey levels, measured). v2: every scroll is a symmetric ease in-out (bezier 0.7,0,0.3,1, about 18 f). Mid-scroll the camera eases out 9% and the passing posts come up to about 40% (feel the feed, ref02/ref03). Vertical motion blur follows scroll speed, capped low. The frame-diff scan now shows smooth ramps only; the only hard jumps are the planned 2-frame flashes.
