@@ -1,0 +1,105 @@
+# Twitter feed animation - plan
+
+Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animations - tracker]], row 2). Brief: [[Context - Twitter animation (cloud session)]]. Media: `change06_twitter_feed/` in the repo (current version, 5 references, 2 Figma frames).
+
+## Current state
+- Status: plan v1 written, waiting for Rachit's OK and the tweets (links + media).
+- Next: Rachit sends tweets, then I build key frames.
+
+## Why the old version failed (client: "the effect of Twitter isn't coming off")
+Measured on `current/old_twitter_animation.mp4` (4.13 s, 23.976 fps). The feed is a narrow column about 200 px wide (about 10% of the frame), text about 8 px tall, and nothing is ever read. New posts just push in from the top, there's no phone, no scroll gesture, no stop and no focus. It reads as a texture, not as "I'm on Twitter". The fix is to make the viewer **read** a few posts at full size and **feel** the thumb (flick, coast, catch).
+
+## What the references teach
+**ref04 idk channel, how they focus tweets (most important).** Real screenshots on pure black, no phone. Each post holds about 0.8-1.2 s and they hard-cut between posts.
+- Focus is a **rack-focus punch-in**: a 3-4 frame blur ramp (peak at 2.68 s), then the same post scaled about 1.35x and cropped by the frame edge.
+- Key words stay full white while the rest drops to about 35% grey.
+- A slow push-in (about +2% per s, slight drift) runs under every hold, so nothing is dead still.
+- Quote tweets stack, and a reply ("no.") is revealed by a slow scroll down.
+
+**ref05 idk channel, highlight.** A small post on black, then a blur cut (3 frames) into a big crop with soft depth-of-field edges.
+- About 0.3 s still, then a **highlighter bar sweeps left to right over about 0.55 s**: fast start, slow finish, like a real marker. "I'm" is covered in 2 frames, then "Claude" slows.
+- Their colour is lime (about #C6F432). Text after the phrase fades to grey with a left-to-right gradient.
+
+**ref02 UI inside a phone (light).** The phone is never shown whole. The camera sits close on the top half of the device, with the rounded corners and status bar barely in frame.
+- The camera drifts down and out as the content scrolls. Tabs swipe sideways with ease-out (about 0.4 s each).
+- The phone edge is only a soft shadow on the background. That's the "subtle phone" look.
+
+**ref01 dark UI in a phone.** Dark-mode X feed with **video posts autoplaying inline**. A second phone sits small and dimmed behind (depth). Skeleton loaders between states.
+
+**ref03 blur and scroll (Envato template).** One post in focus and its neighbours blurred during the scroll, so the eye has one place to go. Animates over alpha.
+
+**Figma.**
+- `fig2_x_post_mockup_dark_light.png`: modern X post cards, dark and light, in an iPhone with a Dynamic Island. **This is the base:** header X mark, name + verified + handle + date, body, media card, action row (13.1k / 11.2k / 36.3k / 97.4k + share).
+- `fig1_twitter_ui_screens_overview.png`: the old bird-era kit (2020, light). Use it only for extra screens if needed: the tweet detail, the full-screen video player with its scrubber, "new posts".
+
+## The concept: one doomscroll, in first person
+The viewer IS the thumb. One phone, dark mode, one continuous scroll that keeps stopping on things that hurt, and stops for less time each round. Wins and dystopia alternate, so every stop is "someone else is winning / the world is moving without me". It ends in a fling so fast the feed turns to streaks, then a hard cut into line 11 ("And there's this constant anxiety").
+
+### Beat sheet (about 12-15 s, not tied to the VO, as Rachit asked)
+| # | Beat | What happens | Time (approx) |
+|---|---|---|---|
+| 0 | Wake | Black. The phone screen lights up (wake, no lock screen), dark X feed already there. The camera is close, top of the phone, the edge barely visible. VO "Every time you open Twitter" starts on the screen-on, not before (sync rule). | 0-0.8 s |
+| 1 | First flick | A slow, human scroll (coast and catch) lands on post A, a text post. | 0.8-1.6 |
+| 2 | Focus A | Rack-focus punch-in to post A (the phone leaves the frame). Neighbours blur, the key phrase stays white, the rest dims, the **highlighter sweeps** the worst phrase. Hold 1.6 s. | 1.6-3.4 |
+| 3 | Pull back + flick | Blur-pull back to the phone (reverse punch), a quicker flick lands on a **video post**. | 3.4-4.2 |
+| 4 | Video B | The video's still frame autoplays about 8 frames after the scroll settles (how X really does it). Push in until the video fills about 70% of the frame and play the crazy moment for about 2 s. Live counters tick up (views stepped). | 4.2-6.4 |
+| 5 | Flick while playing | The video keeps playing as it scrolls away (never pause on exit). Text post C: punch-in + dim/white, no highlighter (hold 1.0 s). | 6.4-7.8 |
+| 6 | Escalation | Post D (video, 1.2 s), post E (text, 0.7 s), post F (0.5 s). Each stop is shorter and each flick faster. The "↑ new posts" pill grows: 3, 12, 48, 99+ (stepped). | 7.8-11 |
+| 7 | Overload | A long fling: motion blur turns the posts into light streaks, 2-3 single-frame flashes of key phrases (white on black, ref04 style). | 11-12.5 |
+| 8 | Exit | A hard stop on one last line, or a JUMP CUT out on the peak, into line 11. | 12.5-13 |
+
+Wins vs dystopia order (to fill from Rachit's tweets): win, dystopian, win (video), dystopian, then flashes of both.
+
+## How each piece is done
+### Highlighting key text (text posts)
+1. Land: the scroll settles with the post's text block on the frame's optical centre.
+2. Punch in on a peak: a 3-frame blur ramp (gaussian about 0 to 18 to 0 px) while scaling the phone camera 1.0 to about 2.2x. The cut is hidden inside the blur (same idea as the speed-matched motion cut).
+3. Dim: non-key words fade to 35% over 6 frames, ease-out. Key words stay 100%.
+4. Highlighter: only on the 1-2 hardest posts. The bar is a slightly ragged rectangle, 1.15x the line height, with the text knocked out on top. Width animates left to right over 13 frames (0.55 s at 23.976) with an ease-out cubic. Multi-line phrases sweep line by line with a 2-frame gap.
+   - **Colour:** Claude orange #D97757 only when the phrase is about Claude/AI agents (brief rule: orange = Claude). Otherwise an **inverted white bar with black text**, which reads like the idk highlight but stays in our white-or-orange palette.
+5. Under every hold: a slow push of +2-3% scale, so it never sits dead still.
+
+### Stop-and-play videos, naturally
+- While scrolling, a video post shows its first frame with a play badge, as X does. Playback starts about 6-8 frames after the scroll settles and the video is more than 50% visible. No fade: it just starts, like the real app.
+- Push in during the first 0.5 s of playback, so the motion carries the start.
+- The duration chip counts down ("0:14", "0:13"...) and a mute icon sits bottom-right. Optional: the clip's own audio fades in for about 1 s under the music (muted to unmuted), then dips as you flick away.
+- On exit the video keeps playing while it scrolls off.
+- I trim each clip to its single most insane 1.5-2.5 s. Remotion plays the real MP4 in sync, frame-accurate.
+
+### The scroll itself (what makes it feel real)
+- iOS momentum: a flick gives a start velocity of 2,500-6,000 px/s (in phone points), decaying about 0.998 per ms (UIScrollView "normal" deceleration).
+- A **catch** is a finger touch that stops it in 3-4 frames. Every stop is a catch, not a soft ease, because that's how a thumb stops on something.
+- Vertical motion blur scales with speed (none below about 600 px/s). The status bar and X header stay fixed while the feed moves under them.
+- Two-speed rule from the brief: the scroll and camera are smooth at 23.976. Counters, the new-posts pill and the overload flashes are **stepped** at about 12 fps.
+
+### The phone: subtle and premium
+- Dark-mode iPhone from fig2 (Dynamic Island, thin black titanium edge), on black. The device is almost invisible. Only a thin **rim light** on the edge and the screen's own light show it.
+- **Screen glow (intro style lock):** the screen casts the two-layer glow onto the black around it (tight 2 px bloom plus a soft 30-40 px halo at low opacity). It feels like light from a screen in a dark room and ties it to the other animations.
+- **Never the whole phone.** The camera frames the top 55-70% of it, cropped by the frame, tilted 4-6° in 3D (slight perspective). It drifts slowly the whole time (ref02).
+- The phone leaves the frame entirely on punch-ins and comes back on pull-backs, so most of the time we're reading, not looking at a device.
+- **Optional depth (ref01):** 1-2 more phones far behind, dim and blurred, also scrolling. It hints that everyone is scrolling. Only if it doesn't clutter.
+
+### Fit with the rest of the intro
+- Transparent ProRes 4444 at 1920x1080, 23.976, plus an MP4 preview on black. The length is set by this plan, not by the old clip.
+- Colour: white/grey for the world and the feed. Orange only where Claude is meant. X's blue verified ticks, links and like-red: keep them or grey them? (question for Rachit)
+- Cuts land on the speed peak. JUMP CUT available for the exit. Sync rule: beats start on the syllable, nothing anticipates.
+- The UI itself stays **crisp, not pixel art**. It has to read as the real app for "the effect of Twitter" to land. The pixel world touches it only at the edges: the overload flashes could use the Fern encode reveal, and the exit could dissolve in pixels. Rachit decides.
+
+## Build
+- **Remotion** (React), tested reachable here (remotion 4.0.539 on npm). X UI rebuilt as components from fig2, so every word is real text (sharp at any zoom) and posts come from a `tweets.json`. Swapping a tweet means editing one line.
+- Renders straight to ProRes 4444 with alpha; Playwright/ffmpeg is the fallback.
+- Font: X uses Chirp (not free). Inter is installed and is the stand-in unless Rachit has Chirp.
+- Process: key frames (stills per beat with frame number), then a 540p MP4 preview with VO, then the final. All source goes in `change06_twitter_feed/source/`.
+
+## What I need from Rachit
+1. **The tweets.** For each one: the link, a screenshot, the exact text, the name/handle/avatar, the counts, the date. I can't open x.com from this session, so screenshots are the source of truth.
+2. **The videos as MP4s.** I can't download from X here, so please send the files for the video posts.
+3. Chirp font files if he has them; otherwise Inter.
+4. The frame before and after: the last frame of L09 and the first shot of line 11, so the entry and exit match.
+5. Answers to the questions in chat.
+
+## Facts and rules to respect
+- Real posts are shown as posted: exact text, real handle, real counts at capture time. No edits to make them sound worse. That replaces the brief's "invented handles" rule (assumed from Rachit picking real tweets; to confirm).
+- Practice piece. Before publishing, check rights for the X videos (other people's footage), per [[Workflow rules]].
+
+Related: [[Context - Twitter animation (cloud session)]], [[Intro animations - tracker]], [[Intro animations - parallel workflow]], [[Motion systems (named)]]
