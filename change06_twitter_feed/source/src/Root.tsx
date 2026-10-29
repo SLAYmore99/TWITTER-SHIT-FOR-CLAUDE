@@ -11,5 +11,8 @@ export const RemotionRoot: React.FC = () => (
     {/* Option 1, 9 s version (same shots, tighter). */}
     <Composition id="TwitterFeed9s" component={Montage} durationInFrames={CUTS.v9s.DURATION} fps={FPS} width={1920} height={1080} defaultProps={{ transparent: false, cut: "v9s" as const }} />
     <Composition id="TwitterFeed9sAlpha" component={Montage} durationInFrames={CUTS.v9s.DURATION} fps={FPS} width={1920} height={1080} defaultProps={{ transparent: true, cut: "v9s" as const }} />
+    {/* Option 1, 6 s version: ends on "Software is dead". */}
+    <Composition id="TwitterFeed6s" component={Montage} durationInFrames={CUTS.v6s.DURATION} fps={FPS} width={1920} height={1080} defaultProps={{ transparent: false, cut: "v6s" as const }} />
+    <Composition id="TwitterFeed6sAlpha" component={Montage} durationInFrames={CUTS.v6s.DURATION} fps={FPS} width={1920} height={1080} defaultProps={{ transparent: true, cut: "v6s" as const }} />
   </>
 );

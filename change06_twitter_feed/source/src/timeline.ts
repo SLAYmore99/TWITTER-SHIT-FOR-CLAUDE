@@ -5,6 +5,7 @@ import { FeedItem } from "./ui/Phone";
 import { PostKey } from "./ui/Post";
 import BEATS_12 from "./beats.json";
 import BEATS_9 from "./beats_9s.json";
+import BEATS_6 from "./beats_6s.json";
 
 export const FPS = 24000 / 1001;
 
@@ -157,23 +158,26 @@ const build = (BEATS: Beats) => {
   n = sc(2);
   read("intcyber", n - 6, 1);
   mark("intcyber", n);
-  // 05  It's over. then down into the post to its video (0:04 on)
-  n = sc(3);
-  read("himanshu", n - 6);
-  mark("himanshu", n);
-  intoMedia(I1.f, I1.n, "himanshu", READ);
-  // 06  This is getting f*cking scary. then its spectrum video
-  n = sc(4);
-  read("imryven", n - 6);
-  mark("imryven", n);
-  intoMedia(I2.f, I2.n, "imryven", READ);
+  // 05-06 only in cuts that go past "Software is dead" (the 6 s cut ends there)
+  if (BEATS.scrolls.length > 3) {
+    // 05  It's over. then down into the post to its video (0:04 on)
+    n = sc(3);
+    read("himanshu", n - 6);
+    mark("himanshu", n);
+    intoMedia(I1.f, I1.n, "himanshu", READ);
+    // 06  This is getting f*cking scary. then its spectrum video
+    n = sc(4);
+    read("imryven", n - 6);
+    mark("imryven", n);
+    intoMedia(I2.f, I2.n, "imryven", READ);
+  }
   const DURATION = BEATS.end;
 
   const MEDIA: Partial<Record<PostKey, MediaWin>> = {
     rock: { src: "vid/rock.mp4", from: 0, trimBefore: Math.round(0.8 * FPS), clock: [9.3, 77.8] }, // clip starts 8.5 s
     nero: { src: "vid/nero2.mp4", from: BEATS.scrolls[1].f + Math.round(BEATS.scrolls[1].n * 0.5), trimBefore: Math.round(0.5 * FPS), clock: [4, 28.35] }, // clip starts 3.5 s
-    himanshu: { src: "vid/himanshu2.mp4", from: I1.f + 2, trimBefore: Math.round(0.5 * FPS), clock: [4, 37.7] },
-    imryven: { src: "vid/imryven.mp4", from: I2.f - 1, trimBefore: Math.round(5 * FPS), clock: [5, 15] },
+    ...(I1 && { himanshu: { src: "vid/himanshu2.mp4", from: I1.f + 2, trimBefore: Math.round(0.5 * FPS), clock: [4, 37.7] as [number, number] } }),
+    ...(I2 && { imryven: { src: "vid/imryven.mp4", from: I2.f - 1, trimBefore: Math.round(5 * FPS), clock: [5, 15] as [number, number] } }),
   };
 
 
@@ -197,5 +201,5 @@ const build = (BEATS: Beats) => {
   return { stateAt, DURATION, MEDIA };
 };
 
-export const CUTS = { v12: build(BEATS_12), v9s: build(BEATS_9 as Beats) };
+export const CUTS = { v12: build(BEATS_12), v9s: build(BEATS_9 as Beats), v6s: build(BEATS_6 as unknown as Beats) };
 export type CutName = keyof typeof CUTS;

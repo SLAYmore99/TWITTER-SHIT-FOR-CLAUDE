@@ -1,0 +1,11 @@
+{
+  "_": "6 s cut (Rachit, 2026-10-29): ends on Software is dead. Eye -> CLAUDE + YouTube -> motion tools video -> Software is dead (holds as the ending). Same calm scrolls as v9.",
+  "end": 144,
+  "sweep": 12,
+  "scrolls": [
+    { "f": 18, "n": 26, "from": "rock", "to": "viipin" },
+    { "f": 63, "n": 26, "from": "viipin", "to": "nero", "part": "media" },
+    { "f": 94, "n": 28, "from": "nero", "to": "intcyber", "dy": -100 }
+  ],
+  "inner": []
+}
