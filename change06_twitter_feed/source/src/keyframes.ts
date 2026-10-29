@@ -12,7 +12,7 @@ export const ORDER: PostKey[] = ["rock", "noisy", "viipin", "charlie", "nero", "
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {
   noisy: { lit: "They built an automated business making $2.4M with Opus 5 at 18", bar: "making $2.4M with Opus 5 at 18", barColor: "white" },
-  viipin: { lit: "CLAUDE + YouTube = $$$$\nEven a 14-year-old can do it.", bar: "CLAUDE + YouTube = $$$$\nEven a 14-year-old can do it.", barColor: "white" },
+  viipin: { lit: "CLAUDE + YouTube = $$$$", bar: "CLAUDE + YouTube = $$$$", barColor: "white" }, // Rachit: first line only
   imryven: { lit: "This is getting f*cking scary.", bar: "This is getting f*cking scary.", barColor: "white" },
   charlie: { lit: "I turned Claude into an entire company." }, // Rachit: no highlight on this one
   mike: { lit: "how I as a CEO am using Claude Code as my AI Chief of Staff" },
