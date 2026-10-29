@@ -18,6 +18,7 @@ Reusable moves that Rachit calls by name. When he says "JUMP CUT" or "slide up",
 - Opacity: **0 → 100% over the first 5 frames** (linear), then holds.
 
 ## Where used
+- [[Twitter feed animation - plan]]: the section's in-animation (v7, 2026-10-29). The whole feed does a slide up, matching how idk brings tweets in (ref04 at 1.55 s).
 - [[Claude Nine intro - draft v1]]: blog beat v3 (2026-10-28). The page does a slide up on "In January", then a JUMP CUT from the wide page to the title on "he published".
 
 Related: [[Motion rules]], [[Motion cheat sheet]], [[Motion gauntlet]]

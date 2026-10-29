@@ -22,7 +22,7 @@ export type SceneState = {
   streak?: number;
   newPosts?: string;
   flash?: string; // single-frame overlay phrase (overload)
-  world?: { opacity: number; blur: number }; // the whole feed (rack-focus in)
+  world?: { opacity: number; blur: number; dy?: number }; // the whole feed (in-animation); dy in px
   splash?: { opacity: number; scale: number }; // X launch screen
   pill?: string; // new-posts pill, fixed at the top of frame
 };
@@ -54,7 +54,7 @@ export const Scene: React.FC<{ s: SceneState; label?: string }> = ({ s, label })
         style={{
           position: "absolute",
           left: 960,
-          top: 540,
+          top: 540 + (s.world?.dy ?? 0),
           transformOrigin: "0 0",
           transform: `perspective(2600px) rotateX(${cam.rx ?? 0}deg) rotateY(${cam.ry ?? 0}deg)`,
           opacity: s.world?.opacity ?? 1,

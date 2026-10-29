@@ -24,6 +24,8 @@ export const E = {
   ref: refScroll,
   inout: Easing.bezier(0.65, 0, 0.35, 1),
   out: Easing.bezier(0.22, 1, 0.36, 1),
+  slideUp: Easing.bezier(0.215, 0.61, 0.355, 1), // Rachit's named "slide up" (Motion systems (named))
+  linear: (t: number) => t,
   bar: Easing.bezier(0.33, 0.6, 0.3, 1), // marker: quick start, long soft finish (ref05)
   accel: Easing.bezier(0.6, 0, 1, 0.6), // builds speed into the hard cut
 };
@@ -71,7 +73,8 @@ const T = {
   ay: new Track(MID),
   zoom: new Track(2.55),
   worldOp: new Track(0),
-  worldBlur: new Track(14),
+  worldBlur: new Track(0),
+  worldDy: new Track(50),
   splashOp: new Track(0),
   splashScale: new Track(0.94),
 };
@@ -121,8 +124,9 @@ const intoMedia = (f: number, n: number, k: PostKey, zoom: number) => {
 T.scroll.cut(0, to("rock", "media"));
 T.zoom.cut(0, READ);
 T.ax.cut(0, MEDIA_X);
-T.worldOp.move(0, 10, 1, E.out);
-T.worldBlur.move(0, 12, 0, E.out);
+// in-animation = "slide up" (as in ref04 at 1.55 s): 50 px below, rises over 10 f, opacity 0-100% over the first 5 f, linear
+T.worldDy.move(0, 10, 0, E.slideUp);
+T.worldOp.move(0, 5, 1, E.linear);
 focus("rock", 0, 1);
 read("rock", 0, 1);
 // 02  quick scroll: CLAUDE + YouTube = $$$$ / Even a 14-year-old can do it.
@@ -172,7 +176,7 @@ export const stateAt = (f: number): SceneState => {
     scroll: T.scroll.at(f),
     cam: { ax: T.ax.at(f), ay: T.ay.at(f), zoom: T.zoom.at(f) },
     streak,
-    world: { opacity: T.worldOp.at(f), blur: T.worldBlur.at(f) },
+    world: { opacity: T.worldOp.at(f), blur: T.worldBlur.at(f), dy: T.worldDy.at(f) },
     splash: { opacity: T.splashOp.at(f), scale: T.splashScale.at(f) },
   };
 };
