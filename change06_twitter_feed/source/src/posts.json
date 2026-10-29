@@ -1,0 +1,230 @@
+{
+ "noisy": {
+  "id": "2099064083366416717",
+  "name": "Noisy",
+  "handle": "noisyb0y1",
+  "avatar": "av/2099064083366416717.jpg",
+  "date": "Sep 13",
+  "text": "They built an automated business making $2.4M with Opus 5 at 18 - and came to Stanford to show how to repeat it:\n\n00:50 - Opus 5 automates an entire business in 60 minutes\n21:34 - one agent replaces 50 Anthropic engineers\n45:47 - one file in Claude Code launches a business making $120k a month without a team\n\nafter watching I gave Claude Code one file - in 60 minutes the business was ready and in the first month $100k +\n\nsave & watch - the article below shows how to go from first file in Claude Code to a business making $2.4M a year.",
+  "replies": "27",
+  "reposts": "41",
+  "likes": "290",
+  "views": "49K",
+  "bookmarks": "706",
+  "media": {
+   "type": "video",
+   "src": "media/noisy_poster.jpg",
+   "w": 1280,
+   "h": 720,
+   "dur": "1:08:49"
+  },
+  "url": "https://x.com/noisyb0y1/status/2099064083366416717"
+ },
+ "viipin": {
+  "id": "2027008002046488625",
+  "name": "Vipin Gautam (Viipin I Gautam)",
+  "handle": "viipin8",
+  "avatar": "av/2027008002046488625.jpg",
+  "date": "Feb 26",
+  "text": "CLAUDE + YouTube = $$$$\nEven a 14-year-old can do it.\n\nUse these prompts to make money with YouTube:",
+  "replies": "33",
+  "reposts": "399",
+  "likes": "3.5K",
+  "views": "547K",
+  "bookmarks": "7.1K",
+  "media": {
+   "type": "image",
+   "src": "media/viipin.jpg",
+   "w": 1280,
+   "h": 720
+  },
+  "url": "https://x.com/viipin8/status/2027008002046488625"
+ },
+ "charlie": {
+  "id": "2076221471375122811",
+  "name": "Charlie Hills",
+  "handle": "charliejhills",
+  "avatar": "av/2076221471375122811.jpg",
+  "date": "Jul 12",
+  "text": "I turned Claude into an entire company.\n\n42 skills, organised like a real org chart (links below):\n\nHere is every department, and where to get each one.\n\nDevelopers\n\nSuperpowers \n\n→https://github.com/obra/superpowers\n\nContext7\n\n → https://github.com/upstash/context7\n\nSkill Creator\n\n → https://github.com/anthropics/skills\n\nMCP Builder \n\n→ https://github.com/anthropics/skills\n\nWebapp Testing \n\n→ https://github.com/anthropics/skills\n\nClaude-Mem\n\n → https://github.com/thedotmack/claude-mem\n\nDesigners\n\nUI UX Pro Max \n\n→ https://github.com/nextlevelbuilder/ui-ux-pro-max-skill\n\nTaste \n\n→https://github.com/Leonxlnx/taste-skill\n\nFrontend Design \n\n→ https://github.com/Leonxlnx/taste-skill\n\nTransitions\n\n → https://github.com/Jakubantalik/transitions.dev\n\nWeb Artifacts \n\n→https://github.com/anthropics/skills\n\nBrand Guidelines\n\n → https://github.com/anthropics/skills\n\nMarketing\n\n45 skills to run your marketing, from copywriting to SEO to lead magnets.\n\nAccess them all here \n\n→ https://github.com/coreyhaines31/marketingskills\n\nSocial Media\n\n17 skills to run your social media, from post writing to Reels to thumbnails.\n\nAccess them all here\n\n → https://github.com/charlie947/social-media-skills\n\nFinance\n\n8 skills to run your finances, from statements to reconciliation to audits.\n\nAccess them all here \n\n→ https://claude.com/plugins/finance\n\nSmall Business\n\n31 skills to run your small business, from cash flow to payroll to invoicing.\n\nAccess them all here \n\n→ https://claude.com/plugins/small-business\n\nLegal\n\n9 skills to handle your legal work, from contract review to NDAs to compliance.\n\nAccess them all here \n\n→https://claude.com/plugins/legal\n\nEvery skill on the chart is real and installable from the links above.\n\nRepost ♻️ this to help your network build their own.",
+  "replies": "106",
+  "reposts": "820",
+  "likes": "4.2K",
+  "views": "449K",
+  "bookmarks": "9.2K",
+  "media": {
+   "type": "video",
+   "src": "media/charlie_full.jpg",
+   "w": 800,
+   "h": 1000,
+   "dur": "GIF"
+  },
+  "url": "https://x.com/charliejhills/status/2076221471375122811"
+ },
+ "mike": {
+  "id": "2022368529417224480",
+  "name": "Mike Murchison",
+  "handle": "mimurchison",
+  "avatar": "av/2022368529417224480.jpg",
+  "date": "Feb 13",
+  "text": "My relationship with my computer has changed more in the last month than in the previous 10 years. \n\nHere's a walkthrough of how I as a CEO am using Claude Code as my AI Chief of Staff to roughly double my productivity. \n\nI show how show how with near perfect context on our company (Ada) and by personal life, my chief of staff helps me:\n\n- Unify 6+ inboxes across Slack, Email, Whatsapp, etc. and speed through them\n- Manage a multiplayer todo list that it works on for me overnight\n- Increase the number of deep relationships I can manage by automatically enriching contact records from all Granola transcripts\n- Push back on core decisions I'm making and ensure my time is aligned to my key goals\n- more...\n\nI've put first version on Github below. If you're a CEO or an exec, give it a try and let me know how it works for you.",
+  "replies": "80",
+  "reposts": "93",
+  "likes": "1.5K",
+  "views": "347K",
+  "bookmarks": "4.5K",
+  "media": {
+   "type": "video",
+   "src": "media/mike_poster.jpg",
+   "w": 1660,
+   "h": 1080,
+   "dur": "19:22"
+  },
+  "url": "https://x.com/mimurchison/status/2022368529417224480"
+ },
+ "deronin": {
+  "id": "2076690611399176506",
+  "name": "Ronin",
+  "handle": "DeRonin_",
+  "avatar": "av/2076690611399176506.jpg",
+  "date": "Jul 13",
+  "text": "",
+  "replies": "64",
+  "reposts": "167",
+  "likes": "1.7K",
+  "views": "631K",
+  "bookmarks": "5.4K",
+  "media": {
+   "type": "article",
+   "src": "media/deronin_cover.jpg",
+   "w": 1200,
+   "h": 480,
+   "title": "Start a 1-Person Business with Claude (FULL COURSE)",
+   "preview": "I run a $40k MRR agency with zero employees"
+  },
+  "url": "https://x.com/DeRonin_/status/2076690611399176506"
+ },
+ "nero": {
+  "id": "2111766067379142766",
+  "name": "Nero",
+  "handle": "neropursue",
+  "avatar": "av/2111766067379142766.jpg",
+  "date": "Oct 18",
+  "text": "look what i just found!! 👀\n\nmotionvideo is a collection of motion designs people build with Claude Opus 5.5, plus prompts you can use to create your own.\n\nSave this →https://motionvideo.xyz/",
+  "replies": "27",
+  "reposts": "66",
+  "likes": "704",
+  "views": "37K",
+  "bookmarks": "938",
+  "media": {
+   "type": "video",
+   "src": "media/nero_motion.jpg",
+   "w": 1676,
+   "h": 1080,
+   "dur": "0:28"
+  },
+  "url": "https://x.com/neropursue/status/2111766067379142766"
+ },
+ "finn": {
+  "id": "2114305886420086817",
+  "name": "Finn",
+  "handle": "finnardley",
+  "avatar": "av/2114305886420086817.jpg",
+  "date": "Oct 25",
+  "text": "i just re created kurzgesagt's entire channel in 10 minutes with claude opus \n\nthey have 0 competition because every video takes a full team of animators and 1200+ hours to make\n\ni turned it into a claude prompt that im giving out for free\n\nopen claude code, paste the prompt, pick an idea, and your video is fully automated\n\nthank me later ↓\n\n<inputs>\nAsk me for: one topic as a \"what if\" question (default: \"What if the Sun vanished?\"), the length (default 30 seconds), and whether I have an ElevenLabs key (if not, use a free local voice).\n</inputs>\n\n<direction>\nA Kurzgesagt-style animated explainer at 1920x1080, 30fps, drawn entirely in code: one 2D canvas plus one WebGL canvas for planets.\nSpace: a vertical gradient #081d2c to #102348, five huge parallax nebula blobs (teal rgb 24,150,160 at 20%, blue 40,95,195 at 16%, coral 220,95,110 at 10%, indigo 60,70,175 at 15%), three star layers at parallax depths .12/.35/.6 that twinkle, 40% of the near stars drawn as 4-point sparkles.\nThe Sun: radius 300px, half off the left edge. A radial gradient #fff7dc to #ffc857 to #ff8f4a with an offset highlight, additive halo rings at 1.23/1.48/1.76/2.1x the radius, 18 faint rotating ray wedges, 28 drifting glowing granules on its surface.\nEarth: an orthographic sphere in a fragment shader, 4x supersampled, from a 2048x1024 map painted from longitude/latitude polygons: land #5fc47a, forest #48ad6b, desert #f5c75f, rainforest #3a9d62, ice #f1f8ff, ocean gradient #4dc7eb to #1a66b8, white capsule clouds. Tilt .26 rad, spin .55 degrees per second. Day/night uses smoothstep(-.12, .24, N·L) with the light direction recomputed from Sun to Earth every frame. Navy night side with ~380 warm city lights, a coral band on the terminator, a cyan rim, ocean specular, an atmosphere halo that is stronger on the lit side.\nA small astronaut mascot (~180px) built from rounded rectangles: suit #f3f7fb, orange #ff8f4a boots, a visor gradient #1f5a73 to #0a1c2c with glowing cyan eyes that look at whatever matters, a blinking antenna light, an idle bob, squash and stretch on every pose.\nType: Fredoka 600/700 only. Captions in caps with 3-6px letter spacing in teal #8fd8e6, gold #ffd98a or white, sitting in rounded pills of rgb(6,20,40) at 62%. Every line of text rises 1.3x its own height through a clip on an ease-out-quint.\nFinish: a vignette to rgba(4,4,20,.45) and a 6% film grain re-randomized 24 times per second.\nBanned: outlines, flares or loops on the Sun's edge, static infographic strips, full stops in on-screen text, text that fades in whole, AI images or AI video, Kurzgesagt's own characters, bird or music.\n</direction>\n\n<structure>\n30 seconds, every line of narration gets a camera move or a transformation, nothing ever holds still.\nTight on the Sun at 2.25x (0s) → on the word \"vanished\" it swells 6% for 0.22s, collapses in 0.33s, then a white flash and a shockwave ring (1s) → pull back to 1x revealing Earth still lit and the astronaut staring at the empty spot (1.6-3s) → on \"eight\" an 8:20 countdown slams in from 1.7x to 1x and starts ticking, a \"LAST LIGHT\" label rides the edge of the growing dark disc (3.2s) → dive to 2.3x on Earth with light streaks flowing in (5.6s) → on \"you\" a YOU pin drops (7s) → on \"left\" a photon lands on the pin with \"THIS LIGHT LEFT THE SUN / 8 MIN 20 SEC AGO\" (7.5s) → on \"play\" the pin morphs into a play button, \"YOU PRESSED PLAY / 15 SEC AGO\" (8.8s) → one pull-back from 2.4x to a 0.3x orbit view, \"LAST LIGHT\" and \"GRAVITY\" riding the ring (9.6-12.5s) → on \"nothing\" a dotted circle at the empty centre (13.4s) → on \"hits\" the darkness sweeps Earth in 0.7s, city lights pop on, the countdown turns gold at 0:00 (15.8s) → on \"black\" the background fades almost to black (17.4s) → Jupiter appears, \"STILL SHINING FOR 1 HOUR+\" (17.9s) → zoom out, a dashed tangent line, \"30 KM/S\" as Earth flies straight off (20.8s) → a thermometer counts 15 to -70°C while frost grows from the poles (22.8s) → a 0.8s rewind on a separate story clock (24.3s) → sunglasses drop onto the astronaut (25.2s) → a photon tagged \"8:20 OLD\", then the title (27.7s).\nFor any other topic, keep the same shape: the event happens on its word, pull back to show scale, dive in to make it personal (\"you\"), pull back out, the consequence with a live counter, an escalation, a funny beat with the mascot, a callback and the title.\n</structure>\n\n<build>\n1. One HTML file. Every frame is a pure function of time: http://window.seek(t) draws frame t. No timers, no CSS animation.\n2. Camera moves on easeInOutCubic, zoom is interpolated in log space, every pop is a damped spring (damping .42-.5, frequency 12-16).\n3. Voice: ElevenLabs eleven_v4 with a designed voice (calm, warm, curious male, late 30s, crisp, light neutral European English), stability .5, similarity .75, generated with timestamps. Without a key, use kokoro-onnx locally and get word times with faster-whisper. Every animation event fires on its word. About 165 words per minute, 0.24s between sentences, a 0.36s beat before the big reveal.\n4. The darkness front: any pixel within the front's radius from the Sun turns to night with a 30px soft edge. The front moves at ~47px/s and ramps to 700px/s near Earth.\n5. Keep two clocks: ambient time for twinkle, spin and bob, and a separate story clock for events, so a rewind stays consistent.\n6. Render with Playwright in headless Edge with the GPU: seek every frame at 30fps and blend 2 subframes (shutter 0.6) for motion blur, then encode with libx264 at CRF 16 for the master and CRF 20 for delivery.\n7. Sound: a calm royalty-free space music bed 7dB under the voice, timed so its natural ending lands on the title, swelling 5dB under the title. One downloaded royalty-free sound effect per event kind (collapse, impact, pull-back whoosh, countdown tick, dive, pin tap, photon land, play click, light hit, reveal, frost, rewind), each peak-aligned to its frame and 4-10dB under the voice. Master with gain plus a limiter to -14 LUFS, -2.2dB true peak.\n</build>\n\n<gotchas>\nMake the WebGL globe canvas at least 2 x radius x zoom x 1.18 pixels or the sphere clips flat in close-ups. Never draw prominences on the Sun's edge, they read as white hooks. Never pad the voice to fit the visuals, tighten the read instead. Speed the darkness front up near Earth or it takes 13 seconds to cross the planet. Show me a contact sheet of every beat before rendering.\n</gotchas>\n\n<start>\nAsk me the inputs, write the narration with the beat each word triggers, show it to me, then build and render the video.\n</start>",
+  "replies": "177",
+  "reposts": "189",
+  "likes": "3.1K",
+  "views": "245K",
+  "bookmarks": "5.2K",
+  "media": {
+   "type": "video",
+   "src": "media/finn_earth.jpg",
+   "w": 1920,
+   "h": 1080,
+   "dur": "0:30"
+  },
+  "url": "https://x.com/finnardley/status/2114305886420086817"
+ },
+ "intcyber": {
+  "id": "2108699960782774733",
+  "name": "International Cyber Digest",
+  "handle": "IntCyberDigest",
+  "avatar": "av/2108699960782774733.jpg",
+  "date": "Oct 9",
+  "text": "Currently the number ONE trending repo on GitHub: Reverse Engineer Anything. It lets your agent take a feature you want from another app and work out how it's built without ever seeing the source code.\n\nSoftware is dead, long live software!",
+  "replies": "45",
+  "reposts": "404",
+  "likes": "4.6K",
+  "views": "154K",
+  "bookmarks": "3.1K",
+  "media": {
+   "type": "image",
+   "src": "media/intcyber.jpg",
+   "w": 1788,
+   "h": 1714
+  },
+  "url": "https://x.com/IntCyberDigest/status/2108699960782774733"
+ },
+ "himanshu": {
+  "id": "2111705429264998892",
+  "name": "Himanshu Hingorani",
+  "handle": "himanshubuildss",
+  "avatar": "av/2111705429264998892.jpg",
+  "date": "Oct 18",
+  "text": "It's over.\n\nAI is generating insane 3D websites, animations & UI from just a prompt.\n\nWeb design will never be the same 🤯\n\n10 wild places to see it:\n\n1. http://scrolltide.co - 600+ award-winning prompts with full source code for 3D and scroll-driven sites. Copy, paste into Claude, Cursor or Lovable, launch live. Edit it until it's yours.\n2. http://awwwards.com - the sites that actually won\n3. http://godly.website - hand-picked sites with serious craft\n4. http://60fps.design - UI motion done right\n5. http://21st.dev - copy-paste components from the community\n6. http://ui.aceternity.com - animated components, big visual impact\n7. http://magicui.design - animated components for landing pages\n8. http://threejs.org - the engine behind most 3D on the web\n9. http://shadertoy.com - shader experiments that look unreal\n10. http://lovable.dev - idea to working app\n\nSave this 🔖 you'll need it before your next project.",
+  "replies": "54",
+  "reposts": "261",
+  "likes": "2.2K",
+  "views": "128K",
+  "bookmarks": "3.4K",
+  "media": {
+   "type": "video",
+   "src": "media/himanshu_poster.jpg",
+   "w": 1920,
+   "h": 1080,
+   "dur": "0:37"
+  },
+  "url": "https://x.com/himanshubuildss/status/2111705429264998892"
+ },
+ "olehmann": {
+  "id": "2031308486815133905",
+  "name": "Ole Lehmann",
+  "handle": "itsolelehmann",
+  "avatar": "av/2031308486815133905.jpg",
+  "date": "Mar 10",
+  "text": "i can't believe nobody caught this.\n\nAnthropic's entire growth marketing team was just ONE PERSON\n\n(for 10 months, confirmed)\n\na single non-technical person ran paid search, paid social, app stores, email marketing, and SEO for the $380B company behind claude\n\nhere's exactly how one human is doing the job of a full marketing team:\n\nit starts with a CSV.\n\n1. he exports all his existing ads from his ad platforms along with their performance metrics (click-through rates, conversions, spend, etc)\n\n2. feeds the whole file into claude code\n\n3. and tells it to find what's underperforming.\n\nclaude analyzes the data, flags the weak ads, and generates new copy variations on the spot\n\nthis is where he gets clever:\n\nhe then splits the work into 2 specialized sub-agents:\n\n1. one that only writes headlines (capped at 30 characters)\n\n2. and one that only writes descriptions (capped at 90 characters).\n\neach agent is tuned to its specific constraint so the quality is way higher than cramming both into a single prompt\n\nso now he's got hundreds of fresh headlines and descriptions.\n\nbut that's just the text.\n\nhe still needs the actual visual ad creative, the images and banners that go on facebook, google, etc.\n\nso he built a figma plugin that:\n\n1. takes all those new headlines and descriptions\n2. finds the ad templates in his figma files\n3. and automatically swaps the copy into each one.\n\nup to 100 ready-to-publish ad variations generated at half a second per batch.\n\nwhat used to take hours of duplicating frames and copy-pasting text by hand\n\nso now the ads are live.\n\nthe next question is which ones are actually working.\n\nfor that he built an MCP server (basically a custom integration that lets claude talk directly to external tools) connected to the meta ads API.\n\nso he can ask claude things like:\n\n• \"which ads had the best conversion rate this week\"\n• or \"where am i wasting spend\"\n\nand get real answers from live campaign data without ever opening the meta ads dashboard\n\nand the part that ties it all together and closes the loop:\n\nhe set up a memory system that logs every hypothesis and experiment result across ad iterations.\n\nso when he goes back to step one and generates the next batch of variations...\n\nclaude automatically pulls in what worked and what didn't from all previous rounds.\n\nthe system literally gets smarter every cycle.\n\nthat kind of systematic experimentation across hundreds of ads would normally need a dedicated analytics person just to track\n\nthe numbers from the doc:\n\nad creation went from 2 hours to 15 minutes. 10x more creative output.\n\nand he's now testing more variations across more channels than most full marketing teams\n\na $380 billion company.\n\nand their entire growth marketing operation (not GTM) = just one person and claude code lol\n\ntruly unbelievable",
+  "replies": "298",
+  "reposts": "796",
+  "likes": "9K",
+  "views": "4.5M",
+  "bookmarks": "16K",
+  "media": {
+   "type": "image",
+   "src": "media/olehmann.jpg",
+   "w": 644,
+   "h": 716
+  },
+  "url": "https://x.com/itsolelehmann/status/2031308486815133905"
+ },
+ "humza": {
+  "id": "2075124923253813587",
+  "name": "Hamza Khalid",
+  "handle": "humzaakhalid",
+  "avatar": "av/2075124923253813587.jpg",
+  "date": "Jul 9",
+  "text": "this is f*cking dangerous\n\nsomeone just revealed how to run a 10-person company with zero employees using one Claude Project\n\nAnthropic's CEO bet on a $1B one-person company by the end of 2026.\n\nless than 6 months left. solo founders are already past several hundred million.\n\nhere is how:\n\n1) Create a Claude Project and add your business files\n2) Connect 10 MCP agents to it for research, leads etc\n3) You sit in the decision seat. the agents run the execution layer.\n\nyou don't need more employees. you need MCP agents that know the business.\n\nsave and bookmark it no matter what\n\nthen read the full article below on how to build your first company with AI without any employee: ↓",
+  "replies": "41",
+  "reposts": "218",
+  "likes": "1.3K",
+  "views": "207K",
+  "bookmarks": "3.3K",
+  "media": {
+   "type": "image",
+   "src": "media/humza.jpg",
+   "w": 2880,
+   "h": 3600
+  },
+  "url": "https://x.com/humzaakhalid/status/2075124923253813587"
+ }
+}

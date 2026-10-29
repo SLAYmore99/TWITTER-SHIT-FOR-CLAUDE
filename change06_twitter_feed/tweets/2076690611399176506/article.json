@@ -1,0 +1,5542 @@
+{
+ "created_at": "2026-07-13T15:29:59.000Z",
+ "modified_at": "2026-07-13T15:32:50.000Z",
+ "id": "2076621229964836864",
+ "title": "Start a 1-Person Business with Claude (FULL COURSE)",
+ "preview_text": "I run a $40k MRR agency with zero employees\nNo developers. No sales team. No ops manager. No agency partners taking 30%\nJust Claude Code, a folder of skills organised like a real company, and a client",
+ "cover_media": {
+  "id": "QXBpTWVkaWE6DAAFCgABHNHjD/3WYAEKAAIToufBaJcgBQAA",
+  "media_id": "2076690561017208833",
+  "media_info": {
+   "__typename": "ApiImage",
+   "color_info": {
+    "palette": [
+     {
+      "percentage": 49.68,
+      "rgb": {
+       "blue": 54,
+       "green": 53,
+       "red": 2
+      }
+     },
+     {
+      "percentage": 11.04,
+      "rgb": {
+       "blue": 100,
+       "green": 80,
+       "red": 19
+      }
+     },
+     {
+      "percentage": 9.83,
+      "rgb": {
+       "blue": 73,
+       "green": 85,
+       "red": 126
+      }
+     },
+     {
+      "percentage": 6.3,
+      "rgb": {
+       "blue": 110,
+       "green": 102,
+       "red": 193
+      }
+     },
+     {
+      "percentage": 6.22,
+      "rgb": {
+       "blue": 88,
+       "green": 121,
+       "red": 233
+      }
+     }
+    ]
+   },
+   "original_img_height": 688,
+   "original_img_url": "https://pbs.twimg.com/media/HNHjD_3WYAEV_6h.jpg",
+   "original_img_width": 1720
+  },
+  "media_key": "3_2076690561017208833"
+ },
+ "content": {
+  "blocks": [
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 35,
+      "offset": 8,
+      "style": "Bold"
+     }
+    ],
+    "key": "fkgm8",
+    "text": "I run a $40k MRR agency with zero employees",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "27kvl",
+    "text": "No developers. No sales team. No ops manager. No agency partners taking 30%",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5pcuv",
+    "text": "Just Claude Code, a folder of skills organised like a real company, and a client pipeline that fills itself while I sleep",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6huc9",
+    "text": "This is NOT another \"AI will make you rich\" article. I'm going to show you every system, every prompt, every price and every mistake, in order, from zero",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a01fe",
+    "text": "If you need money next week, close this tab. If you're ready to build something real over the next 3-6 months, this is the only article you need",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 49,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "a78s2",
+    "text": "After reading and implementing this, you'll have:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "28eql",
+    "text": "A complete AI operating system for your business (Claude Code + a skills folder backed up in the cloud)",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3qdhf",
+    "text": "Two client machines running in parallel (freelance platforms + cold email on autopilot)",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c7vnc",
+    "text": "A sales process that closes without being salesy (including the trick where Claude listens to your sales calls)",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2fdhs",
+    "text": "Three service tiers you can deliver completely solo: websites, automations, full AI systems",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "68mit",
+    "text": "A build framework that lets you ship things you've never built before",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cdcrd",
+    "text": "A pricing model that keeps clients paying for years (the 5x rule)",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2qq0",
+    "text": "[ Let's build it ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 0,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "b3e4e",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bfjj9",
+    "text": "Why a 1-Person Business? (And Why 2026 Is the Cheat Code Year)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9m1ad",
+    "text": "Quick math on where the world actually is with AI:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 1,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "6i237",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 8,
+      "style": "Bold"
+     }
+    ],
+    "key": "b0d0b",
+    "text": "Roughly 84% of the planet has never used AI once. Not one prompt",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5533v",
+    "text": "Around 16% touched a free chatbot and stopped there",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8bi15",
+    "text": "About 0.3% pay $20/mo for a real model",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ast9f",
+    "text": "And a rounding error of humanity knows tools like Claude Code exist",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "568gv",
+    "text": "You're reading an article about running a company on Claude skills",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "c32bb",
+    "text": "You're not late. You're early by default",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "88g7o",
+    "text": "Here's why that matters for money:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1lvul",
+    "text": "Billions of people and tens of millions of businesses will NEVER learn these tools",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a1msu",
+    "text": "They're focused on their craft: roofing, dentistry, law, e-commerce",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3jsnq",
+    "text": "To them, what you'll build by the end of this article looks like magic",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 21,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "e4dp6",
+    "text": "And magic is billable",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "pd3s",
+    "text": "One more unlock most people miss:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8noi9",
+    "text": "3 years ago only the US, UK, Canada and Australia were realistic markets for AI services",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f3m93",
+    "text": "Right now Europe, LATAM and Asia are waking up at the same time",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b21ug",
+    "text": "If you speak Swedish, Portuguese, Greek, Polish, anything non-English: that market is basically EMPTY",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3mb8j",
+    "text": "Same service, near-zero competition, way higher reply rates",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8aq5u",
+    "text": "The Honest Part (Because I Promised No Guru Energy)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2qov2",
+    "text": "Every new business follows the same curve:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 6,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "ecnp2",
+    "text": "Day 1: you're hyped. \"I can automate everything, clients everywhere, I'm rich\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 7,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "58k",
+    "text": "Week 3: reality. The first client is hard. Skills take time. Nobody answers your messages",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 32,
+      "offset": 36,
+      "style": "Bold"
+     }
+    ],
+    "key": "ct1n9",
+    "text": "That's the bottom of the curve, and 95% of people quit exactly there",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f6uf8",
+    "text": "They call it a scam and move on to the next shiny thing",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4m5u3",
+    "text": "The 5% who push through the flat months win everything",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3hcr7",
+    "text": "My first client took months of daily outreach and paid a few hundred dollars",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "errbu",
+    "text": "If that sentence just killed your motivation, this business is not for you",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "72nkr",
+    "text": "If it didn't, remember one rule for the rest of this article:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 28,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "cuv26",
+    "text": "GET GOOD BEFORE YOU GET RICH",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3vpar",
+    "text": "People pay you for the time you invested into skills they don't have. No skills = no invoice",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 2,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "a38hb",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a46uq",
+    "text": "The Business Model (3 Levels, You Start at Level 1)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "avbqi",
+    "text": "Before any tools, here's the full map of what you're actually selling",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 26,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8g2a9",
+    "text": "Level 1: AI-Built Websites",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "kjaj",
+    "text": "Roughly 30% of US small businesses have no website at all. Most guides tell you to chase them",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4mu80",
+    "text": "Don't. A business that survived 15 years without a website doesn't want one. That's the hardest sell, not the easiest",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fre73",
+    "text": "The real buyers are the other 70%: businesses with BAD websites",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "h4od",
+    "text": "They already paid for one once, so they're proven buyers. The pain is visible: slow, broken on mobile, invisible on Google, looks like 2011",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3g2r7",
+    "text": "Plus two bonus segments almost nobody targets:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "57ej2",
+    "text": "- brand-new businesses (fresh LLC registrations are public data, they need a site NOW and have no vendor yet)\n- businesses running ads into a bad site (easiest pitch alive: \"you're paying for clicks that bounce\")",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8s24c",
+    "text": "Easiest to deliver, fastest first dollar, and every rebuild starts with proof: their current site IS the before picture",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "76mi4",
+    "text": "Example on how you can get build easily one (with no specific design skills):",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 3,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "ffvbd",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "5kca2",
+    "text": "Typical ticket: ~$500 first sale, $3-10k once you have proof",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 31,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "dsv8m",
+    "text": "Level 2: Automations and Agents",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "29mid",
+    "text": "Invoicing, lead follow-up, onboarding, review collection, support",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "e3bhf",
+    "text": "This is where recurring revenue starts: things that run monthly get billed monthly",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f0kar",
+    "text": "The niches where this is genuinely bleeding money:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 43,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "745tk",
+    "text": "- home services (roofers, plumbers, HVAC): one job is worth $2-15k \nand the owner is on a roof when the lead calls. missed-call textback + follow-up is a printing press here",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 23,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8dkei",
+    "text": "- dentists and clinics: every no-show costs $200-500. reminders, recalls and reactivation sell themselves",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "c2ue",
+    "text": "- real estate: a lead answered in 5 minutes converts many times better than one answered in an hour. speed-to-lead automation is the product",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 13,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "7dsfg",
+    "text": "- law firms: intake chaos + clients ghosting paperwork. document chasing alone is worth the retainer",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "7cqlu",
+    "text": "- solar and contractors: graveyards of old quotes. one reactivation campaign = five figures from zero ad spend",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "79f20",
+    "text": "- e-commerce, gyms, salons: support inboxes, win-backs, abandoned carts",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8p8fj",
+    "text": "and here's the cheat code: ",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6o5s7",
+    "text": "it's the same 4 automations in every niche. instant follow-up, review collection, reminders, dead-lead reactivation",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3n9qr",
+    "text": "build them once, skill-ify them, deploy per niche forever",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "eoctp",
+    "text": "Typical ticket: $1-5k setup + $200-500/mo",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "9us2d",
+    "text": "Level 3: Full AI Systems",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bvkle",
+    "text": "5-25 automations bundled behind one dashboard the client logs into",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7e3fq",
+    "text": "The client sees executions, hours saved, money saved. It's a product, not a gig",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 38,
+      "offset": 16,
+      "style": "Bold"
+     }
+    ],
+    "key": "55i1e",
+    "text": "Typical ticket: $10-20k projects or $2-5k/mo retainers",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bma3e",
+    "text": "The Rules of This Model",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5rhul",
+    "text": "Everyone starts at level 1, no exceptions. Websites build skill, trust and testimonials at once",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bfj1t",
+    "text": "Levels compound: the client who bought a $500 website buys a $2k/mo system 8 months later",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7kldd",
+    "text": "And you're not selling AI. Nobody pays for \"an agent\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 4,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2lpl1",
+    "text": "BAD: \"we implement AI agent solutions\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 5,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "31hci",
+    "text": "GOOD: \"you'll never miss a lead again, and your invoices send themselves\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 23,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "jmro",
+    "text": "[ PLAYBOOK BEGINS ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 4,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "fr0ud",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a5oj",
+    "text": "Your AI Operating System (The 20 Minute Setup)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3cnjb",
+    "text": "Your entire company will live in ONE folder",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 87,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "ahc2j",
+    "text": "Claude Code is the operating system, skills are the employees, the folder is the office",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "babhh",
+    "text": "Setup, step by step:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 18,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8jqh6",
+    "text": "1. Install VS Code",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6gfgl",
+    "text": "You won't write code. Claude will. VS Code is just the garage",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "9887i",
+    "text": "2. Install Claude Code from the terminal",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6i1aj",
+    "text": "Log in with a subscription (Pro or Max), not an API key. Pro is enough to start",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 58,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "4qgjr",
+    "text": "3. Create your company folder and name it like your agency",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7ovu",
+    "text": "This folder is your business. Everything you ever build lives here",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bqgmh",
+    "text": "Here's the exact structure you're gonna build:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 5,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "eegtp",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c0rj2",
+    "text": "Go create this structure RIGHT NOW. Seriously, pause reading and do it",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fjjve",
+    "text": "Empty folders are fine today. They fill up over this article",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 28,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "ej4l",
+    "text": "4. Install your first skills",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6p79e",
+    "text": "Skills are portable instruction sets that turn Claude into a specialist. I shared my full org chart of them before (42+ skills organised like departments), grab what fits",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "foppi",
+    "text": "Install flow, copy-paste this into Claude Code:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 6,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "5e2u1",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8sktq",
+    "text": "Restart the session after installing, skills load on start",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 13,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "7si7g",
+    "text": "5. Back it up",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3sgvn",
+    "text": "Create a PRIVATE GitHub repo named after your agency, then tell Claude:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 7,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "bih98",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d00nr",
+    "text": "If your laptop dies tomorrow, your company shouldn't die with it",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d7tsi",
+    "text": "The Core Principle (Remember This One)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 43,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6b8sv",
+    "text": "The IP of a one-person business is not code",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 46,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2vicu",
+    "text": "It's your SOPs, your processes and your skills",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9adb5",
+    "text": "Every time you build something twice, turn it into a skill",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d5hem",
+    "text": "By month 6 your skills folder is worth more than your client list",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "edptl",
+    "text": "OS is running. Now we need the thing every beginner skips: customers",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 25,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "frcou",
+    "text": "[ Client Machine #1 ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 8,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "u4hh",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2o2kg",
+    "text": "Personal Brand + Lead Magnets (Clients Come to You)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9slf0",
+    "text": "Most guides send beginners to freelance platforms",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8t5lu",
+    "text": "I won't. A fresh profile with zero reviews competes against 6-year-old accounts, and you pay for every application. Brutal place to get offer #1",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2ik6q",
+    "text": "Here's the smarter machine: build proof in public and let clients DM you",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 25,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6m0k3",
+    "text": "The Proof-First Principle",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "41e3t",
+    "text": "Nobody hires a stranger with no track record",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "487mv",
+    "text": "But here's the cheat: you don't need clients to build a track record",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fsaq5",
+    "text": "You need BUILDS. And with Claude you can produce a portfolio in one weekend that most freelancers take a year to collect",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 32,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "e9td4",
+    "text": "Step 1: Build Before Anyone Asks",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "582be",
+    "text": "Pick ONE niche (say, roofers or dentists)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9b5c5",
+    "text": "Then build 3-5 real demos for businesses in that niche:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9f8rl",
+    "text": "- a premium website for a real local business (yes, without asking)\n- a missed-call textback automation with a 60 second demo video\n- a review-collection flow showing the before/after math",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "94thk",
+    "text": "fake clients, real builds. the work is identical to paid work, only the invoice is missing",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "cpfhu",
+    "text": "Step 2: Post Every Build (The Content Engine)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6ev0e",
+    "text": "every build becomes 3-5 posts:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dqalh",
+    "text": "- the 60 second screen recording: \"built this website for a local roofing company in 10 minutes with Claude\"\n- the before/after shot of their current site vs your rebuild\n- the numbers post: \"this automation answers calls the owner misses. roofers lose $2-15k per missed call\"\n- the how-I-did-it breakdown for the builder audience",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cab0j",
+    "text": "post on X and LinkedIn, daily. one platform for reach, one for buyers",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "abak9",
+    "text": "you're not posting content. you're posting EVIDENCE",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "4iek7",
+    "text": "Step 3: The Lead Magnet (Turn Views into DMs)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "eqodc",
+    "text": "a lead magnet is something so useful people hand over contact",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c1j61",
+    "text": "info to get it. yours are free because Claude built them:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a9g69",
+    "text": "- the niche template pack: \"5 website templates for [niche], free, DM me TEMPLATE\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8q8uv",
+    "text": "- the audit: \"comment AUDIT and I'll record a 2 minute video on what your website is losing you\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d2rhu",
+    "text": "- the calculator: \"this tool shows how much revenue a slow site costs you. link below\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9div8",
+    "text": "the mechanic that matters: make them COMMENT or DM to get it",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8d99f",
+    "text": "every comment = the algorithm pushes your post harder",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6lnl5",
+    "text": "every DM = a warm conversation you didn't cold-start",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "175qg",
+    "text": "Example on how you can sell your product with this mechanics:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 9,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "4tm7s",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2u4fu",
+    "text": "His tweet got 765 interested people in this system",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6n406",
+    "text": "For example 300 of 765 will read the docs he sent in DMs",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "143ma",
+    "text": "In this doc, he literally leaves a lot of sales magnets to \"BOOK A CALL\" or if you want to get ready such as system with no efforts, \"BUY IT HERE\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fela8",
+    "text": "His system costs $247 (and let's just imagine the most minimum conversion 1%). That's 3 buyers at $247 = $741 from only one tweet and it scales... ",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "981ns",
+    "text": "In total, from such as conversion loops, he has already attracted 683 members who got interested to buy this system for $247 (IN TOTAL: $168,701)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3ckbp",
+    "text": "Proof from Whop: ",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 10,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "5lg9d",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "53oqv",
+    "text": "Step 4: The Smart Sell (The Demo-First Close)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2ahv4",
+    "text": "here's the move that closes the loop, and it's the whole philosophy of this article in one play:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9sj8j",
+    "text": "1. find a business in your niche with a bad website",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1a63v",
+    "text": "2. rebuild their homepage with Claude (10 minutes, you have the skill)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "aheuf",
+    "text": "3. deploy it on a free subdomain",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dfob6",
+    "text": "4. send the owner a short loom: \"I rebuilt your homepage, here's yours vs this. if you want it, it's yours, and I'll connect your domain today\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d34va",
+    "text": "5. post the before/after publicly (blur the name if they haven't answered)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f0k6v",
+    "text": "you're not asking for work. you're handing them the finished product with the price tag as the only step left",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7or8r",
+    "text": "rejection rate is irrelevant: every \"no\" still produced",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "55q8e",
+    "text": "a portfolio piece and 3 posts",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 43,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "crkb8",
+    "text": "Step 5: First 3 Clients = Testimonial Price",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7llql",
+    "text": "your first 3 clients don't pay full price, they pay in proof:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "39s1n",
+    "text": "\"I'll build it for [cheap/free]. in exchange: a testimonial, a case study with real numbers, and 2 referrals if you're happy\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1lqjf",
+    "text": "after 3 case studies with numbers, the personal brand machine",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9if4v",
+    "text": "runs itself: post proof, collect DMs, close on calls",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1e3q7",
+    "text": "and unlike a freelance profile, this asset is YOURS. every post compounds, nobody charges you per application, and the audience you build becomes distribution for everything you ever sell after",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "euf5q",
+    "text": "Personal brand is your daily grind. now the machine that works while you sleep",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 25,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "76mea",
+    "text": "[ Client Machine #2 ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 11,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "e5vng",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "600r9",
+    "text": "Cold Email (The Background Engine)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "65d9h",
+    "text": "Personal Brand = active daily work, an hour or two every day",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9gifs",
+    "text": "Cold email = passive pipeline, set up once, feeds you leads in the background",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6b55v",
+    "text": "Run BOTH from day one. This pair is the highest-leverage combo that exists for a beginner",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dmpr6",
+    "text": "The Stack:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 12,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "23df7",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "18gc4",
+    "text": "Deliverability Crash Course",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "aasvi",
+    "text": "Skip this and you burn your domains:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "52ckf",
+    "text": "NEVER send cold email from your main domain. One bad campaign kills it",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1ncu4",
+    "text": "Buy pre-warmed domains inside the sending tool (~$10-15 per domain, 5 inboxes each)",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 56,
+      "style": "Bold"
+     }
+    ],
+    "key": "6aej1",
+    "text": "Each inbox sends ~20 emails/day safely, so one domain = ~100 sends/day",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fgt7c",
+    "text": "Warming your own domain takes ~30 days, pre-warmed skips the wait",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9p1bo",
+    "text": "Set domain forwarding to your real website so curious prospects land somewhere real",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ta4o",
+    "text": "Wait for 100% health score before sending anything",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 17,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "ap1is",
+    "text": "Building the List",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6mlru",
+    "text": "The formula:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 88,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "7gfak",
+    "text": "[niche] x [country] x [1-50 headcount] x [owner/founder titles] x [verified emails only]",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "155ad",
+    "text": "Filter in Apollo: location, industry keywords, titles (CEO, Founder, Owner), verified emails",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cf3hp",
+    "text": "Headcount is the most underrated filter: 1-50 employees means the owner reads their own inbox",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "acjbq",
+    "text": "Export through a scraper: 1,500 leads for ~$25 instead of Apollo pricing",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cktp6",
+    "text": "Clean the list through a verifier: expect ~60-65% \"good\", send ONLY to good",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "838li",
+    "text": "Sending to dead emails = bounces = blacklisted domain = start over",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5j7v6",
+    "text": "And remember the language arbitrage: Swedish, Portuguese, Greek, Polish inboxes are EMPTY while US inboxes are a warzone. Same offer, translated, multiples of the reply rate (check local cold-email laws first, seriously)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "btuc8",
+    "text": "The MCP Moment",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2j9ht",
+    "text": "Now the part that makes this a Claude article",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9ubkm",
+    "text": "Connect your sending tool's MCP to Claude (Claude settings \u2192 Connectors \u2192 add custom connector \u2192 paste the API URL)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7gq21",
+    "text": "Suddenly Claude can create campaigns, write sequences, pull replies and manage follow-ups on its own, ~38 tools worth of control",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ahmu7",
+    "text": "Then encode your campaign structure into a skill. The skill interviews YOU before writing:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 13,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "18cd9",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "20ufi",
+    "text": "Answer, and Claude drafts the full sequence with follow-ups and creates it in the tool through the MCP. You review, save, launch",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a7nlo",
+    "text": "Here's the first-email framing that works:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 14,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "c29fe",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 11,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "dl4gg",
+    "text": "The Numbers",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6t6r8",
+    "text": "So you know what \"working\" looks like:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 32,
+      "style": "Bold"
+     }
+    ],
+    "key": "efjm0",
+    "text": "A good campaign: ~10,000 sends, 5%+ reply rate. The industry norm is ~0.5%",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ca3d7",
+    "text": "Follow-ups produce most of the replies. Never send one-and-done",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 51,
+      "offset": 15,
+      "style": "Bold"
+     }
+    ],
+    "key": "eujcj",
+    "text": "Rule of thumb: 100 sends/day = one interested lead every other day",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7kn38",
+    "text": "One interested lead every other day = a full calendar within a month",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 17,
+      "offset": 84,
+      "style": "Bold"
+     }
+    ],
+    "key": "ds1d3",
+    "text": "And the offer rule that drives all of it: never email \"we do AI solutions\". Email a tangible artifact. \"I built your company a demo site, here it is\" flips the whole dynamic, they've seen the product before the call even starts",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7b63j",
+    "text": "Leads are replying. Now the part everyone fumbles: the call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "5v0vh",
+    "text": "[ The Sales System ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 15,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "2lqkl",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b1mue",
+    "text": "How to Close Clients (The Doctor Approach)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2m3j0",
+    "text": "Beginners lose deals in three places: before the call, during the call, after the call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "acqhm",
+    "text": "Here's all three, fixed",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "flpa1",
+    "text": "Before the Call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6u26",
+    "text": "Rule 1: NEVER give price before the call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "697bd",
+    "text": "Price in DMs = judged on price alone, they can't see value yet",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6t3pe",
+    "text": "Price after a demo = compared against the value they just saw",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4l2kp",
+    "text": "Show $10k of value, then say $2k, and their brain does the math for you",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "emd27",
+    "text": "If they push for price over text: \"depends on scope, that's exactly what the 15 minutes is for\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 50,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "d5luh",
+    "text": "Rule 2: confirmations + reminders on every channel",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "egolf",
+    "text": "People forget they booked, feel embarrassed, and ghost. Kill it with cadence:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 16,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "cti2f",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 101,
+      "style": "Bold"
+     }
+    ],
+    "key": "ctbkm",
+    "text": "The demo mention is deliberate. Skipping a meeting where someone built something FOR YOU feels rude. Guilt is a show-up strategy",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 25,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "el4po",
+    "text": "Rule 3: never sell in DMs",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "erj37",
+    "text": "Limited info in text, full value live",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6nj8k",
+    "text": "During the Call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5ls6e",
+    "text": "A doctor doesn't open with \"buy this prescription\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4o80o",
+    "text": "They ask where it hurts, diagnose, THEN prescribe",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 61,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "64i2o",
+    "text": "You talk 20%, they talk 80%, and your 20% is mostly questions",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b2bf8",
+    "text": "Why it works: when the CLIENT says the pain out loud, they convince themselves. You can't out-argue a conclusion they reached on their own",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2iujp",
+    "text": "The question ladder:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 17,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "b54v8",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a4mlj",
+    "text": "Question 3 is the pattern: make them state the loss themselves",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cis1d",
+    "text": "Question 4 makes them price the solution before they've heard your price",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "44upo",
+    "text": "The call skeleton:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8ai5l",
+    "text": "Pain questions (the ladder above)",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8apil",
+    "text": "\"I might have something for this, let's see if it even makes sense\"",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "88gcn",
+    "text": "Show the demo, screen share, under 10 minutes",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d63bq",
+    "text": "State the price. ONE number, clean",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 14,
+      "style": "Bold"
+     }
+    ],
+    "key": "19h6l",
+    "text": "Then SHUT UP. The silence after price is where deals close. Don't fill it",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4n9a0",
+    "text": "Handle objections (they're usually questions in disguise: \"what if it doesn't work?\"), answer, close",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6744b",
+    "text": "And the ethics line: if they don't need it, tell them. A business with 500 reviews doesn't need your review system. One honest \"you don't need this\" generates more referrals than any close",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 17,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "crmc0",
+    "text": "Closing Mechanics",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5nol",
+    "text": "Always book the next call ON the current call. Calendar = commitment. \"Let me send the invite right now while we're here\"",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "db97o",
+    "text": "Always take a commitment on the call",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 20,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "b9dji",
+    "text": "The $1 Stripe trick: create a $1/year recurring payment link. \"Let's put a card on file, it's $1 and I'm refunding it\". Later you charge the real amount with zero friction",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 27,
+      "style": "Bold"
+     }
+    ],
+    "key": "209ie",
+    "text": "And the conversion weapon, the Proof of Concept close:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bhece",
+    "text": "Payment upfront + satisfaction guarantee",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ath7c",
+    "text": "\"You pay to start, I build the entire thing, you see the finished product, and if you're not happy: full refund, no questions\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dchpf",
+    "text": "Removes 100% of their risk, signals total confidence",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9c5p9",
+    "text": "If your work is good you will basically never refund, and your close rate jumps",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6pvtn",
+    "text": "After the Call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f14ln",
+    "text": "Overdeliver on the first project. Your reputation IS the business at this stage",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 14,
+      "style": "Bold"
+     }
+    ],
+    "key": "cubbh",
+    "text": "Set recurring bi-weekly review calls with every client. Agencies average 20-30% monthly churn, review calls take you to ~5%. 30% churn means clients stay 3 months, 5% means years",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7ont4",
+    "text": "Upsell ON those calls, never cold: website client \u2192 review automation \u2192 AI phone agent \u2192 ads",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 141,
+      "style": "Bold"
+     }
+    ],
+    "key": "f4li5",
+    "text": "Referrals, 2 rules: be SPECIFIC (\"do you know any plumbers or electricians?\" beats \"know anyone?\", the brain can't search \"anyone\") and give 20% commission on referred revenue",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6k2gm",
+    "text": "The Claude Trick I Promised",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5kcep",
+    "text": "Connect an AI notetaker MCP to Claude (Fathom or similar). It records and transcribes every call",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c7pdo",
+    "text": "After the call, one prompt:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 18,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "f7ggf",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 38,
+      "offset": 51,
+      "style": "Bold"
+     }
+    ],
+    "key": "ed6e5",
+    "text": "Claude reads the meeting, writes the spec, and can START BUILDING before you've had lunch",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9niu5",
+    "text": "Zero context loss between what the client said and what gets built",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9bpbb",
+    "text": "Client closed, money committed. Now we deliver, and this is where Claude turns you into a team",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "651td",
+    "text": "[ Delivery Level 1 ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 19,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "37n0s",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3jete",
+    "text": "Websites (Your First Product)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 19,
+      "offset": 124,
+      "style": "Bold"
+     }
+    ],
+    "key": "d47ij",
+    "text": "~10 million US small businesses have no website. They will never learn Claude Code, they're busy roofing and filling teeth. That gap is the job",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1lcjh",
+    "text": "What the market charges:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 20,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "5dhs0",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "flrej",
+    "text": "The $500 first website is not underselling. It's buying a testimonial, a portfolio piece and a future upsell path in one transaction",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 9,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6mhvl",
+    "text": "The Build",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "drkdt",
+    "text": "Use a premium-website skill (build one or grab one from the skill repos)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "63jo9",
+    "text": "/build-premium-website, then answer the interview: industry, brand vibe, colors, services",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 16,
+      "offset": 49,
+      "style": "Bold"
+     }
+    ],
+    "key": "6pjcr",
+    "text": "Production React + Tailwind site on localhost in under 10 minutes",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ebqr4",
+    "text": "Then iterate with screenshots: paste what looks wrong, describe it in plain words, Claude fixes it",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8t3ga",
+    "text": "What Makes It Sellable (Not Just Pretty)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2thk4",
+    "text": "Bold CTA above the fold with a click-to-call number",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bgntf",
+    "text": "Social proof section: reviews, before/after photos",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4rf0",
+    "text": "Contact form wired to their CRM or email",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7utvb",
+    "text": "Fast load, animations in code",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "68th7",
+    "text": "Mobile checked (inspect \u2192 toggle device view)",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 27,
+      "offset": 54,
+      "style": "Bold"
+     }
+    ],
+    "key": "9buod",
+    "text": "Most designers build pretty sites that don't convert. You build converting sites. That's the pitch",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 13,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6ctcm",
+    "text": "Ship It, Free",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "90a5e",
+    "text": "Push the code to a GitHub repo",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3pcf9",
+    "text": "Vercel: add new project, paste the repo, deploy",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "55q8d",
+    "text": "Live in ~30 seconds on a free subdomain",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2v12q",
+    "text": "Custom domain later through any registrar",
+    "type": "ordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 2,
+      "offset": 28,
+      "style": "Bold"
+     }
+    ],
+    "key": "e0frd",
+    "text": "Hosting cost at this stage: $0",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 18,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "f3t3p",
+    "text": "The Portfolio Play",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 53,
+      "offset": 6,
+      "style": "Bold"
+     }
+    ],
+    "key": "8fr9u",
+    "text": "Build 5 template sites for 5 different industries THIS WEEK. Fake businesses are fine",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4nqlk",
+    "text": "One portfolio site that showcases all 5",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4s9bf",
+    "text": "Prospects pick instead of imagine, and picking closes faster than imagining",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "f9ho0",
+    "text": "These templates are also your Upwork portfolio and your first proof posts",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b82jv",
+    "text": "Then, after your second real website: encode the process into a skill",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8krjn",
+    "text": "Delivery collapses from days to an afternoon",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 36,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "a0cik",
+    "text": "You just created your first employee",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7u6tl",
+    "text": "Websites open doors. Automations keep the money coming every month",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "97kmu",
+    "text": "[ Delivery Level 2 ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 21,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "1ebg1",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4hn4v",
+    "text": "Automations (Where Recurring Money Starts)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fc9tn",
+    "text": "The default advice is drag-and-drop builders. Skip them",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 6,
+      "style": "Bold"
+     }
+    ],
+    "key": "b51c3",
+    "text": "Use a code-based open source automation runner instead, here's why:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dnhdn",
+    "text": "Claude writes code better than it clicks UI",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3se3i",
+    "text": "Code is versionable, testable, and lives in your GitHub",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "332pg",
+    "text": "Open source = host anywhere, even on the client's own servers",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bpil",
+    "text": "\"Runs on your servers\" is a phrase enterprise buyers pay extra for",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b1ule",
+    "text": "For third-party access use an OAuth broker (Composio style) so Claude never touches raw Google credentials. You run one script, click two links, connections go active",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5s60q",
+    "text": "One Complete Build: The Invoicing Automation",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ca6n6",
+    "text": "Form in \u2192 PDF invoice out \u2192 auto-sent via Gmail \u2192 archived to Drive",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9hiau",
+    "text": "The prompt pattern:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 22,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "1cpo6",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 49,
+      "offset": 50,
+      "style": "Bold"
+     }
+    ],
+    "key": "1hock",
+    "text": "Memorize that pattern, it repeats for everything: outcome + skills to use + constraints + plan mode",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3632d",
+    "text": "Claude asks clarifying questions (fields, trigger, email style), you answer, approve the plan, it builds",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3f1ni",
+    "text": "Then wire it up:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 23,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "16u6m",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "bshgo",
+    "text": "The Debug Loop",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6pls1",
+    "text": "Something always breaks on the first test. The loop:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 35,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "e7tsp",
+    "text": "\"check the logs, did my test work?\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bfsjd",
+    "text": "Claude reads the run logs, finds the issue, fixes it, you rerun",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6peda",
+    "text": "Repeat until green. You never open a stack trace yourself",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 52,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "f11ui",
+    "text": "This loop is 80% of what \"being technical\" means now",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "75jvr",
+    "text": "Deploy the task to production, deploy the form to Vercel, done",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "q03v",
+    "text": "One SECURITY WARNING: an exposed endpoint wired to your API key = a stranger burning your credits at 3am. Auth on anything public is not optional (the full pattern is in the next section)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "rsbb",
+    "text": "The Biggest Idea in This Article",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 41,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "7ljl0",
+    "text": "BUILD ONCE. SKILL-IFY IT. DELIVER FOREVER",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "alpdf",
+    "text": "After any successful build:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 24,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "8te8n",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9m6r0",
+    "text": "Then double check: \"is this skill standalone? does it reference the invoice app anywhere?\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 73,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "609id",
+    "text": "Your skills folder = your product catalog = the actual IP of the business",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dfitc",
+    "text": "Every skill is an employee that works free, forever",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5qjo4",
+    "text": "Single automations sell for hundreds. Bundled systems sell for thousands",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3h5vo",
+    "text": "[ Delivery Level 3 ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 25,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "7bbj3",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2ke9u",
+    "text": "Full AI Systems (The $10k+ Tier)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7m84u",
+    "text": "A full AI system = 5-25 automations behind ONE dashboard the client logs into",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "662t4",
+    "text": "Most agencies hand over spaghetti flows the client never opens",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3j6gs",
+    "text": "You hand over a product: executions this month, hours saved, tickets answered",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 79,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "aa82l",
+    "text": "The dashboard is what makes a retainer feel like software instead of an invoice",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6rm9b",
+    "text": "The stack:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 26,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "dinei",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2l3jp",
+    "text": "The Build Order That Works",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 48,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3dfrj",
+    "text": "1. Scaffold the structure FIRST with zero design",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ei93p",
+    "text": "Dashboard page, sidebar of automations, settings, login",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9r5jk",
+    "text": "The rule: it's much harder to fix bad to good than to build good from the start, but structure comes before beauty",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "19eg2",
+    "text": "2. Design makeover pass with a frontend skill",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "em49g",
+    "text": "\"Give this app a makeover, [style] vibe, light and dark mode\", then iterate with screenshots",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 24,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "e5rrf",
+    "text": "3. Install automation #1",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bjl37",
+    "text": "The invoicing build you already have, rebranded inside the dashboard",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 42,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "b8275",
+    "text": "4. Onboarding automation, built in minutes",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3uh3",
+    "text": "Contract PDF generated with the client's details + calendar link email + onboarding survey",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6iabi",
+    "text": "One trigger, three emails, new client onboarded while you sleep",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 37,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "fva3p",
+    "text": "5. The flagship: the AI support inbox",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4v8m6",
+    "text": "What it does:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "erg0j",
+    "text": "Watches a shared support inbox every 10 minutes",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5c1p4",
+    "text": "RAG over the client's knowledge base (they paste docs, PDFs, URLs)",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5imf9",
+    "text": "Auto-answers the ~60% of tickets that are repetitive",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "510vv",
+    "text": "Every answer ships with a confidence score + citations",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ddvjv",
+    "text": "Low-confidence tickets escalate to a human queue WITH a pre-drafted reply waiting",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2d4ad",
+    "text": "Analytics tab: tickets answered, escalation rate, hours saved",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "boijm",
+    "text": "The Economics That Sell It",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 27,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "df1ao",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 32,
+      "offset": 80,
+      "style": "Bold"
+     }
+    ],
+    "key": "2t98o",
+    "text": "And the same system resells to your next client with just a new knowledge base. Second sale = almost pure margin",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5n0ia",
+    "text": "Ship It + Skill-ify It",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3fl1u",
+    "text": "Private GitHub repo, Vercel deploy, set every env variable in the hosting dashboard, and update the auth URL from localhost to the live domain (everyone forgets this exactly once)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 25,
+      "offset": 63,
+      "style": "Bold"
+     }
+    ],
+    "key": "3rs1j",
+    "text": "Then the final skill-ification: encode the whole scaffold as a \"new-client-system\" skill that asks for client name, email domain and brand colors",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2trt",
+    "text": "Every future client gets a live dashboard on DAY ONE, in minutes",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 67,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "cik8d",
+    "text": "This is the moment it stops being freelancing and becomes a company",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2qvq9",
+    "text": "And if you're thinking \"I could never build this\", the next section deletes that excuse",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2dmf",
+    "text": "[ The Meta-Skill ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 28,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "8ua26",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fk6to",
+    "text": "How to Build ANYTHING With Zero Experience (The 4-Step Framework)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 31,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "8hmr4",
+    "text": "1. BUILD PLAN (the design spec)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6ej00",
+    "text": "What you're building + the tech stack + the design and UX",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2gm93",
+    "text": "The stack determines cost, speed, scalability and how hard it is to extend later",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4u62r",
+    "text": "Go back and forth with Claude for literally HOURS on a complex build",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "1li8l",
+    "text": "This document is where the project is won or lost",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "ca674",
+    "text": "2. IMPLEMENTATION PLAN",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6e01g",
+    "text": "The how: the build plan broken into steps with checkboxes",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6ith2",
+    "text": "A complex build is ~40 steps: file structure, database, auth, features, in order",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6jv2v",
+    "text": "Forcing sequence forces good decisions",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 8,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6gf2a",
+    "text": "3. BUILD",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7inqr",
+    "text": "Feed steps one at a time: \"start with step 1\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c90df",
+    "text": "Approve between steps, don't dump the whole plan at once",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "42r2p",
+    "text": "Use sub-agent execution for speed on big builds",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 18,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "9llbj",
+    "text": "4. TEST AND REFINE",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7cmpk",
+    "text": "You WILL hit bugs. Paste every error to Claude verbatim",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8scrb",
+    "text": "Then the design makeover pass at the end",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cmj6o",
+    "text": "The Ratio Rule",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 40,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3uut1",
+    "text": "80% of your time goes into steps 1 and 2",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "53v12",
+    "text": "20% into step 3",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bfo1d",
+    "text": "Everyone does the opposite, then wonders why the AI \"built the wrong thing\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4dsqc",
+    "text": "Give me six hours to chop down a tree and I'll spend four sharpening the axe",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "22ldj",
+    "text": "The Zero-Experience Cheat: Two-Model Verification",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4bn7a",
+    "text": "One AI proposes the stack and the plan",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "ee2br",
+    "text": "A second session audits it: \"here's a proposed architecture, is this actually the right choice? what breaks at scale?\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 57,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "cmhiq",
+    "text": "Consultant + auditor. They catch each other's blind spots",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "e18hr",
+    "text": "This is how you make senior-engineer decisions with zero background",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3prsa",
+    "text": "And when you don't know the answer to a clarifying question, \"what would you recommend?\" is always allowed",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "b7t78",
+    "text": "Your kickoff prompt for anything:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 29,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "9250t",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 49,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "5crlr",
+    "text": "The framework is the skill. The stack is a detail",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6f6bd",
+    "text": "You can build anything. Now let's make sure you charge like it",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 15,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "bvouk",
+    "text": "[ Pricing ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 30,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "bllts",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "728i3",
+    "text": "How to Price AI Services (The 5x Rule)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cp84d",
+    "text": "The golden rule of everything:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 50,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2kt3",
+    "text": "GIVE EVERY CLIENT A 5X RETURN ON WHAT THEY PAY YOU",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bsnsk",
+    "text": "Save them $10k/mo, charge $2k/mo",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9ku0d",
+    "text": "Why it works:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "518f4",
+    "text": "The client re-does the math every month and re-decides to stay. Make the math undeniable",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9is69",
+    "text": "Low churn compounds into referrals",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 14,
+      "offset": 19,
+      "style": "Bold"
+     }
+    ],
+    "key": "1p7uo",
+    "text": "Enough referrals = negative churn: the agency grows without outreach",
+    "type": "unordered-list-item"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6tm53",
+    "text": "Calculating the Value",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "18bod",
+    "text": "Path 1, payroll saved:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 31,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "4ssl6",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 20,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3mtuj",
+    "text": "Path 2, new revenue:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dmsvu",
+    "text": "Price on GROSS PROFIT of NEW revenue only, never existing",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "5tn0k",
+    "text": "System generates $100k/mo new revenue at ~$40k gross profit \u2192 your price ~$8k/mo",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "aai3a",
+    "text": "The Three Pricing Structures",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 41,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "39prb",
+    "text": "1. Result-based (% of gross profit, ~20%)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "cl8k7",
+    "text": "Highest ceiling, scales infinitely with the client",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "adr73",
+    "text": "Requires trackability: a real CRM, clean attribution",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "eie4c",
+    "text": "One result-based client can produce six figures of LTV where a retainer would have made $12k",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fjeer",
+    "text": "Rule: retainer if you're average, result-based if you're great",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "3mee3",
+    "text": "When value is untrackable (a support widget), fall back to per-unit pricing (~$1 per conversation)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 36,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "eer18",
+    "text": "2. Upfront + recurring (the default)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 33,
+      "offset": 9,
+      "style": "Bold"
+     }
+    ],
+    "key": "3ciku",
+    "text": "Example: $2k upfront + $500/mo service fee",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8q7sa",
+    "text": "The upfront creates commitment. Clients who pay nothing ghost",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7uirn",
+    "text": "The recurring is justified as support, monitoring, fixes, improvements",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "c798i",
+    "text": "ALWAYS pair with the satisfaction guarantee",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9gu4j",
+    "text": "Ten clients on this = $5k/mo baseline before any new sales",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 32,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "2rkl",
+    "text": "3. Usage tiers (whale insurance)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "96bv4",
+    "text": "Like software: 100 calls / 1,000 calls / 5,000 calls / custom above",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "dbgor",
+    "text": "Protects you from the $500/mo client who turns out to do 10,000 calls",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7ssib",
+    "text": "Simplicity Rules",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 29,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "dcaa3",
+    "text": "A confused person doesn't buy",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "d83dl",
+    "text": "ONE price, not a menu of line items",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2r2oq",
+    "text": "Bundle software costs into your price 99% of the time ($600 flat beats \"$500 + $100 in tools\")",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "4milk",
+    "text": "Exception: enterprise that wants to own and host everything, they pay their own tooling and a much higher fee",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "621h5",
+    "text": "And the rule above all pricing rules:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 4,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3fgu",
+    "text": "BAD: \"an AI agent with RAG over your knowledge base and confidence-scored escalation\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 5,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "1cua8",
+    "text": "GOOD: \"your support inbox answers itself and you save $10k a month\"",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 60,
+      "offset": 54,
+      "style": "Bold"
+     }
+    ],
+    "key": "9ma47",
+    "text": "Nobody buys AI. Nobody even buys automation. They buy more money, more time, and fewer employees doing boring work",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fv2pp",
+    "text": "One more engine and the whole loop closes",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 20,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "dnekn",
+    "text": "[ The Flywheel ] \u2193\u2193\u2193",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 32,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "6ekgs",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2ceqr",
+    "text": "Show Your Work (The Compounding Loop)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bg5t1",
+    "text": "Every client build is a content asset you already paid for",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2etjb",
+    "text": "The loom you recorded for the proposal: content",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9bs09",
+    "text": "The dashboard screenshot: content",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "9d0n",
+    "text": "The before/after of their website: content",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "fe28l",
+    "text": "The support inbox hitting 63% auto-answered this month: content",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6s7eq",
+    "text": "The loop:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 180,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "abp6j",
+    "text": "build for a client \u2192 post the proof \u2192 proof pulls inbound leads \u2192 inbound = no connects, no sending costs, no cold anything \u2192 better clients \u2192 better builds \u2192 better proof \u2192 repeat",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7r3k4",
+    "text": "What to post: \"built this in 10 minutes with Claude\" screen recordings, before/after shots, real numbers, and the org chart of your skills folder (meta, but it works, ask me how I know)",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 22,
+      "offset": 115,
+      "style": "Bold"
+     }
+    ],
+    "key": "feu2u",
+    "text": "I run this exact posting system across 10 platforms without writing anything manually. The full breakdown is in my Content Engine article, it's the perfect companion to this one",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 10,
+      "offset": 75,
+      "style": "Bold"
+     }
+    ],
+    "key": "872bm",
+    "text": "Your agency and your audience feed each other. Most people build only one. Build both",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 33,
+      "length": 1,
+      "offset": 0
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "4jjm5",
+    "text": " ",
+    "type": "atomic"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "7baod",
+    "text": "CONCLUSION (what to do)",
+    "type": "header-two"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 23,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "bqehb",
+    "text": "1. Set up the OS today: folder + Claude Code + skills + GitHub backup. 20 minutes, do it right now",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 45,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "6gg4b",
+    "text": "2. Build your first template website tomorrow for a fake business, deploy it free",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 16,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "acs05",
+    "text": "3. This weekend: create your freelance profile AND launch one small cold campaign",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 35,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "9ar9a",
+    "text": "4. Spend 4 HOURS A DAY on outreach. Marketing and selling are the real skills of this business, not AI. This is the part everyone underestimates and the reason most people fail",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 41,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "3gedm",
+    "text": "5. Take your first clients free or cheap. You're buying testimonials, trust and reps, not income",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 41,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "35e6f",
+    "text": "6. Get to $2-3k/mo that covers your life. The success criteria of business is staying in business. 9 out of 10 die here, not at scaling",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 21,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "44gpd",
+    "text": "7. Then raise prices. Fire broke and annoying clients. Fewer clients, higher pay",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 50,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "bd9hd",
+    "text": "8. Find the bottleneck, fix it, find the next one. Leads, then calls, then delivery, then leads again. You'll be on this step forever. That's the job",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "bu8ke",
+    "text": "And the honest footnotes:",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "2qjsd",
+    "text": "You don't have to quit your job. Build 5-9am when your brain is fresh, work 9-5, two hours in the evening, weekends",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "8povp",
+    "text": "Growth is exponential AND volatile: months of flat, then it clicks, then a dip, then a bigger click",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "a5j0c",
+    "text": "One person is how you START, not a cap. Claude carries 10-15 clients mostly on its own",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [],
+    "key": "6ciqp",
+    "text": "And don't over-automate. Sometimes hiring one human for calls beats three weeks of building a mediocre automation. Even coming from me",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 46,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "4j65g",
+    "text": "A business used to be an office full of people",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 66,
+      "offset": 0,
+      "style": "Bold"
+     }
+    ],
+    "key": "bjnoi",
+    "text": "Now it's a folder, a subscription, and someone who refuses to quit",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 34,
+      "length": 2,
+      "offset": 74
+     }
+    ],
+    "inlineStyleRanges": [
+     {
+      "length": 9,
+      "offset": 64,
+      "style": "Bold"
+     }
+    ],
+    "key": "ej6c1",
+    "text": "If you loved this article and found it valuable, please put the LIKE + RT \u2764\ufe0f",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [],
+    "inlineStyleRanges": [
+     {
+      "length": 12,
+      "offset": 25,
+      "style": "Bold"
+     }
+    ],
+    "key": "7b6qt",
+    "text": "If this article collects 2,000+ Likes, I drop the full skill pack from it (proposal writer, campaign builder, website builder, new-client-system) in a follow-up",
+    "type": "unstyled"
+   },
+   {
+    "data": {},
+    "entityRanges": [
+     {
+      "key": 35,
+      "length": 1,
+      "offset": 38
+     }
+    ],
+    "inlineStyleRanges": [],
+    "key": "2osab",
+    "text": "Now, it's time to go build it buddies \ud83d\ude0e",
+    "type": "unstyled"
+   }
+  ],
+  "entityMap": [
+   {
+    "key": "34",
+    "value": {
+     "data": {
+      "url": "https://abs.twimg.com/emoji/v2/svg/2764.svg"
+     },
+     "mutability": "Immutable",
+     "type": "TWEMOJI"
+    }
+   },
+   {
+    "key": "12",
+    "value": {
+     "data": {
+      "entityKey": "d6e8768e-35ef-4a6d-8e73-75944eaca35f",
+      "markdown": "```plaintext\nInstantly        sending + inbox management      ~$10-15 per domain\nApollo           lead database + filtering       free to browse\nlead scraper     exporting Apollo lists          ~$0.005 per lead\nMillionVerifier  cleaning the list               cheap per batch\nClaude + MCP     writing and managing campaigns  your subscription\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "8",
+    "value": {
+     "data": {
+      "entityKey": "fc3fd01c-b50f-4623-989b-e9e57a48a932"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "19",
+    "value": {
+     "data": {
+      "entityKey": "b8ab2267-04df-4646-a001-76cd71cc2fde"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "23",
+    "value": {
+     "data": {
+      "entityKey": "9aa8eb88-1d88-4e49-8b5d-6042b5b3314f",
+      "markdown": "```plaintext\nrunner API key      (from the automation platform)\nauth broker key     (from the OAuth service)\nAnthropic API key   (for AI-generated email text)\nDrive folder ID     (from the folder URL)\nbusiness details    (logo URL, bank details, currency, net terms)\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "4",
+    "value": {
+     "data": {
+      "entityKey": "6c7eaf0c-160a-45a5-bf87-5bf8f21a2967"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "15",
+    "value": {
+     "data": {
+      "entityKey": "900c5630-84d3-4ad2-8891-efc04d1dcb7b"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "11",
+    "value": {
+     "data": {
+      "entityKey": "cf9232eb-70c4-42c8-91fd-4333470e3e2e"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "9",
+    "value": {
+     "data": {
+      "entityKey": "0e80e725-6d0f-4903-a312-3406fd582eaf",
+      "tweetId": "2071293386724982947"
+     },
+     "mutability": "Immutable",
+     "type": "TWEET"
+    }
+   },
+   {
+    "key": "33",
+    "value": {
+     "data": {
+      "entityKey": "cb3f2fe3-705b-4f7c-8fd5-d39769af05a8"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "22",
+    "value": {
+     "data": {
+      "entityKey": "e90f8c2b-6d12-4c5d-8c0b-76262987f6e4",
+      "markdown": "```plaintext\nI want to automate my invoicing process\n\nFlow: I fill a simple web form, it builds the invoice,\nexports a PDF, emails it to the client via Gmail,\nand archives a copy to Google Drive\n\nUse two skills:\n1. the composio skill for all third-party authentication\n2. the trigger.dev skill to build and host the task\n\nAuto-generate invoice numbers by date. Keep all secrets\nin a .env file, nothing hardcoded\n\nPlan mode first: ask me your clarifying questions before building\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "26",
+    "value": {
+     "data": {
+      "entityKey": "169558ba-7db8-4f7d-99de-abf2a1fc89ca",
+      "markdown": "```plaintext\nfront end    Next.js + Tailwind + shadcn components\nauth         magic links via email, no passwords,\n             restricted to the client's email domain\nback end     code-based automation runner (open source)\ndatabase     MongoDB (built-in vector search for RAG)\nhosting      Vercel (front) + runner cloud (back),\n             or the client's own servers for enterprise\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "13",
+    "value": {
+     "data": {
+      "entityKey": "25788482-6d32-4af5-aa06-f63cb11521b8",
+      "markdown": "```plaintext\n1. What are you selling and to whom? (one paragraph)\n2. What's the #1 pain this niche feels daily?\n3. What tangible asset does the email offer?\n   (a demo site, a lost-revenue calculator, an audit,\n   this becomes the subject line)\n4. What should the campaign be called?\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "24",
+    "value": {
+     "data": {
+      "entityKey": "230d57f5-867c-40fd-8099-2ec8da0eac45",
+      "markdown": "```plaintext\nCreate a skill from what we built this session\n\nMake it GENERIC: any mini automation with a form front end,\na background task back end, and OAuth-brokered integrations,\nnot invoicing-specific\n\nThe skill must interview the user about their use case first,\nand must research before building\n\nMake it fully standalone: no references to this project's paths\n\nVerify it's standalone before finishing\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "35",
+    "value": {
+     "data": {
+      "url": "https://abs.twimg.com/emoji/v2/svg/1f60e.svg"
+     },
+     "mutability": "Immutable",
+     "type": "TWEMOJI"
+    }
+   },
+   {
+    "key": "16",
+    "value": {
+     "data": {
+      "entityKey": "217ed7be-5d81-4503-8b86-052b3d82218f",
+      "markdown": "```plaintext\ninstantly:     \"confirmed, [day] at [time]. calendar invite sent\"\nevery 3 days:  \"still on for [day]! preparing something for you\"\n1 day before:  \"quick reminder about tomorrow. I built a demo\n                based on your actual business, excited to show it\"\n1 hour before: \"see you at [time]\"\n5 min before:  \"just wrapping another call, see you in 5\"\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "5",
+    "value": {
+     "data": {
+      "entityKey": "9520b390-b142-48bb-8973-4dc475163505",
+      "markdown": "```plaintext\n/your-agency\n\u251c\u2500\u2500 CLAUDE.md              (who you are, what the business does, how to behave)\n\u251c\u2500\u2500 skills/\n\u2502   \u251c\u2500\u2500 engineering/       (superpowers, context7, mcp-builder, webapp-testing)\n\u2502   \u251c\u2500\u2500 design/            (frontend-design, taste, brand-guidelines)\n\u2502   \u251c\u2500\u2500 sales/             (proposal-writer, campaign-builder, call-prep)\n\u2502   \u251c\u2500\u2500 delivery/          (build-premium-website, mini-automation, new-client-system)\n\u2502   \u2514\u2500\u2500 operations/        (invoicing, onboarding, reporting)\n\u251c\u2500\u2500 clients/\n\u2502   \u2514\u2500\u2500 [one folder per client: context, transcripts, builds]\n\u251c\u2500\u2500 templates/\n\u2502   \u2514\u2500\u2500 [website templates, contract template, proposal skeleton]\n\u2514\u2500\u2500 content/\n    \u2514\u2500\u2500 [proof posts, looms, screenshots for marketing]\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "10",
+    "value": {
+     "data": {
+      "entityKey": "3a53e59e-99a6-496e-8fbd-8d2275d2f9ee",
+      "mediaItems": [
+       {
+        "localMediaId": "5",
+        "mediaCategory": "DraftTweetImage",
+        "mediaId": "2076679707760668672"
+       }
+      ]
+     },
+     "mutability": "Immutable",
+     "type": "MEDIA"
+    }
+   },
+   {
+    "key": "21",
+    "value": {
+     "data": {
+      "entityKey": "800f7857-79b0-4b84-90ad-878bce78fe87"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "32",
+    "value": {
+     "data": {
+      "entityKey": "d74db094-3bf7-4afd-8a46-c8798358e9bd"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "6",
+    "value": {
+     "data": {
+      "entityKey": "d757a030-3710-4c63-9fb8-45fe657a65e7",
+      "markdown": "```plaintext\nI downloaded a folder of Claude skills to my Downloads folder\n\nResearch the official documentation for installing Claude skills\nin a project, then install them into this folder\n\nAfter installing, list every skill you now have access to\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "1",
+    "value": {
+     "data": {
+      "entityKey": "175dbed2-5349-4da9-a446-389855bbcda6",
+      "mediaItems": [
+       {
+        "localMediaId": "1",
+        "mediaCategory": "DraftTweetImage",
+        "mediaId": "2076670567160188928"
+       }
+      ]
+     },
+     "mutability": "Immutable",
+     "type": "MEDIA"
+    }
+   },
+   {
+    "key": "17",
+    "value": {
+     "data": {
+      "entityKey": "ce3475b4-fb7f-4d44-a578-c2697246b04c",
+      "markdown": "```plaintext\n1. \"how do new customers usually find you right now?\"\n2. \"what happens to a lead that calls after hours?\"\n3. \"what do you think a customer does when they compare\n   your 5 reviews to your competitor's 150?\"\n4. \"how much is one new [job/patient/client] worth to you?\"\n5. \"what have you already tried to fix this?\"\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "25",
+    "value": {
+     "data": {
+      "entityKey": "4aa2153d-dbeb-483d-b946-4a94ee8183e4"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "14",
+    "value": {
+     "data": {
+      "entityKey": "1ebaeea3-02a3-4850-abaf-fa3834307777",
+      "markdown": "```plaintext\nsubject: [tangible asset for their business]\n\nI was going to call, but figured I'd write first\n\nI think [company] is losing [jobs/patients/orders] because\n[specific observable problem: site doesn't rank, no reviews,\nslow follow-up]\n\nI made you [the asset] so you can see what I mean: [link]\n\nWorth a 15 minute call?\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "31",
+    "value": {
+     "data": {
+      "entityKey": "517bad5e-041b-4747-97cf-97efdad61616",
+      "markdown": "```plaintext\nsupport team: 10 reps at $3k/mo\nyour system cuts it to 5\nvalue created: $15k/mo\nyour price at 5x: $3k/mo\nclient keeps: $12k/mo, forever\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "0",
+    "value": {
+     "data": {
+      "entityKey": "4361d6d5-7d0c-4d9b-8f12-df0855e8ce00"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "20",
+    "value": {
+     "data": {
+      "entityKey": "3876ccbf-91b1-4712-8180-65ab7708cb25",
+      "markdown": "```plaintext\ntemplate freelancer         $1-3k\nboutique studio             $3-10k\nproper agency               $10-30k\nmid-tier agency             $30-80k\ntop agency                  $80-250k+\n\nyour realistic FIRST sale   ~$500\nyour target in year one     $3-10k\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "27",
+    "value": {
+     "data": {
+      "entityKey": "1b2bbba3-bee2-45ef-8c6c-7250bca59e07",
+      "markdown": "```plaintext\na support rep costs        $2-4k/mo\na 10-person team cut to 5  saves $15k/mo\nyou charge                 $2-5k/mo\nclient still saves         $10k+/mo\n\nnobody churns from that math\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "2",
+    "value": {
+     "data": {
+      "entityKey": "a5411c57-1d91-4791-9f35-9f6ecf09c024"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "18",
+    "value": {
+     "data": {
+      "entityKey": "32f6e415-14b9-4243-962d-9ece108588e2",
+      "markdown": "```plaintext\nCheck the transcript from my [time] call with [client]\n\nExtract: their business context, every pain point mentioned,\nwhat we agreed to build, timeline and budget signals\n\nWrite a full project spec into clients/[client-name]/\nand propose the build plan\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "30",
+    "value": {
+     "data": {
+      "entityKey": "d673733d-7f2f-4385-82ff-dfe232e85279"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   },
+   {
+    "key": "7",
+    "value": {
+     "data": {
+      "entityKey": "b06e2a23-5c39-4199-a4f5-ba20f2eda752",
+      "markdown": "```plaintext\npush this folder to [repo url], don't push any secrets\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "29",
+    "value": {
+     "data": {
+      "entityKey": "550cff31-c0ef-4a76-b818-89073ec69627",
+      "markdown": "```plaintext\nI want to build [thing]\n\nFirst: a build plan. Ask me questions about how it should\nwork, then write the design spec as a .md file\n\nRecommend the tech stack and justify it: cost to run,\nspeed, scalability\n\nDon't write any code until I approve the spec\n```"
+     },
+     "mutability": "Mutable",
+     "type": "MARKDOWN"
+    }
+   },
+   {
+    "key": "3",
+    "value": {
+     "data": {
+      "entityKey": "1045ea98-62e3-4187-bb24-3bbb4f7c8726",
+      "mediaItems": [
+       {
+        "localMediaId": "3",
+        "mediaCategory": "AmplifyVideo",
+        "mediaId": "2076673758748639232"
+       }
+      ]
+     },
+     "mutability": "Immutable",
+     "type": "MEDIA"
+    }
+   },
+   {
+    "key": "28",
+    "value": {
+     "data": {
+      "entityKey": "466a56dc-0222-4991-9643-1e9d188627dc"
+     },
+     "mutability": "Immutable",
+     "type": "DIVIDER"
+    }
+   }
+  ]
+ },
+ "media_entities": [
+  {
+   "id": "QXBpTWVkaWE6DAAFCgABHNHQ4M8XkAAKAAIToufBaJcgBQAA",
+   "media_id": "2076670567160188928",
+   "media_info": {
+    "__typename": "ApiImage",
+    "color_info": {
+     "palette": [
+      {
+       "percentage": 90.92,
+       "rgb": {
+        "blue": 223,
+        "green": 226,
+        "red": 227
+       }
+      },
+      {
+       "percentage": 8.7,
+       "rgb": {
+        "blue": 173,
+        "green": 205,
+        "red": 158
+       }
+      },
+      {
+       "percentage": 0.11,
+       "rgb": {
+        "blue": 96,
+        "green": 193,
+        "red": 224
+       }
+      },
+      {
+       "percentage": 0.11,
+       "rgb": {
+        "blue": 164,
+        "green": 213,
+        "red": 197
+       }
+      }
+     ]
+    },
+    "original_img_height": 900,
+    "original_img_url": "https://pbs.twimg.com/media/HNHQ4M8XkAACjpi.png",
+    "original_img_width": 775
+   },
+   "media_key": "3_2076670567160188928"
+  },
+  {
+   "id": "QXBpTWVkaWE6DAAECgABHNHTx+iWgAAKAAIAAAAAAAAAAAAA",
+   "media_id": "2076673758748639232",
+   "media_info": {
+    "__typename": "ApiVideo",
+    "aspect_ratio": {
+     "denominator": 180,
+     "numerator": 277
+    },
+    "duration_millis": 1127932,
+    "preview_image": {
+     "color_info": {
+      "palette": [
+       {
+        "percentage": 68.29,
+        "rgb": {
+         "blue": 25,
+         "green": 22,
+         "red": 26
+        }
+       },
+       {
+        "percentage": 18.89,
+        "rgb": {
+         "blue": 234,
+         "green": 239,
+         "red": 239
+        }
+       },
+       {
+        "percentage": 2.82,
+        "rgb": {
+         "blue": 25,
+         "green": 51,
+         "red": 67
+        }
+       },
+       {
+        "percentage": 2.22,
+        "rgb": {
+         "blue": 65,
+         "green": 72,
+         "red": 58
+        }
+       },
+       {
+        "percentage": 1.15,
+        "rgb": {
+         "blue": 55,
+         "green": 27,
+         "red": 19
+        }
+       }
+      ]
+     },
+     "original_img_height": 2160,
+     "original_img_url": "https://pbs.twimg.com/amplify_video_thumb/2076673758748639232/img/YpAYEsLVDS7JMxGE.jpg",
+     "original_img_width": 3324
+    },
+    "variants": [
+     {
+      "bit_rate": 10368000,
+      "content_type": "video/mp4",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/vid/avc1/1662x1080/iyNQ96eBXLdNqWis.mp4?tag=28"
+     },
+     {
+      "bit_rate": 832000,
+      "content_type": "video/mp4",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/vid/avc1/554x360/1eFsS15lIHvaARjV.mp4?tag=28"
+     },
+     {
+      "bit_rate": 256000,
+      "content_type": "video/mp4",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/vid/avc1/414x270/CAWU52Y30_lTPGpN.mp4?tag=28"
+     },
+     {
+      "bit_rate": 25128000,
+      "content_type": "video/mp4",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/vid/avc1/3324x2160/th2-0vsxHajpnTUr.mp4?tag=28"
+     },
+     {
+      "content_type": "application/x-mpegURL",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/pl/Qkil9h-wjNEOMymO.m3u8?tag=28&v=c58"
+     },
+     {
+      "bit_rate": 2176000,
+      "content_type": "video/mp4",
+      "url": "https://video.twimg.com/amplify_video/2076673758748639232/vid/avc1/1108x720/x1MQ3cIsSkCfu1P1.mp4?tag=28"
+     }
+    ]
+   },
+   "media_key": "13_2076673758748639232"
+  },
+  {
+   "id": "QXBpTWVkaWE6DAAFCgABHNHZMQVWMAAKAAIToufBaJcgBQAA",
+   "media_id": "2076679707760668672",
+   "media_info": {
+    "__typename": "ApiImage",
+    "color_info": {
+     "palette": [
+      {
+       "percentage": 66.11,
+       "rgb": {
+        "blue": 255,
+        "green": 255,
+        "red": 255
+       }
+      },
+      {
+       "percentage": 15.01,
+       "rgb": {
+        "blue": 34,
+        "green": 27,
+        "red": 27
+       }
+      },
+      {
+       "percentage": 9.47,
+       "rgb": {
+        "blue": 209,
+        "green": 131,
+        "red": 147
+       }
+      },
+      {
+       "percentage": 3.69,
+       "rgb": {
+        "blue": 207,
+        "green": 94,
+        "red": 114
+       }
+      },
+      {
+       "percentage": 1.28,
+       "rgb": {
+        "blue": 216,
+        "green": 216,
+        "red": 249
+       }
+      }
+     ]
+    },
+    "original_img_height": 934,
+    "original_img_url": "https://pbs.twimg.com/media/HNHZMQVWMAA9T-I.jpg",
+    "original_img_width": 1798
+   },
+   "media_key": "3_2076679707760668672"
+  }
+ ]
+}

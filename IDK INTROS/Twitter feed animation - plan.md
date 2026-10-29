@@ -3,8 +3,36 @@
 Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animations - tracker]], row 2). Brief: [[Context - Twitter animation (cloud session)]]. Media: `change06_twitter_feed/` in the repo (current version, 5 references, 2 Figma frames).
 
 ## Current state
-- Status: plan v1 written, waiting for Rachit's OK and the tweets (links + media).
-- Next: Rachit sends tweets, then I build key frames.
+- Status: **rough key frames v1 sent** (2026-10-29), 16 stills rendered from the real Remotion build: `change06_twitter_feed/keyframes/v1/` (sheet: `_sheet_v1.png`).
+- Next: Rachit guides on the key frames, then the 540p preview with motion.
+- All tweets pulled from X (text, counts, avatars, media) into `change06_twitter_feed/tweets/<id>/`. Network was opened to full internet on 2026-10-29.
+
+## Key frames v1 (2026-10-29): the sequence
+One continuous dark-mode feed, in this scroll order. The age ladder opens it ($2.4M at 18, then "even a 14-year-old"), then the videos of people doing wild things with Claude, then it collapses ("Software is dead", the flashes, "It's over."). About 21 s at 23.976.
+
+| KF | Frame | Post | What happens |
+|---|---|---|---|
+| 01 | 0 | - | Wake: screen lights up, the phone huge, tilted, its edge barely visible |
+| 02 | 14 | @noisyb0y1 | Slow flick, the thumb catches post 1 (phone view) |
+| 03 | 30 | @noisyb0y1 | Blur-punch into the text. White bar: "making $2.4M with Opus 5 at 18" |
+| 04 | 64 | @viipin8 | Flick, catch, punch. Bar sweeping "Even a 14-year-old can do it." |
+| 05 | 98 | @charliejhills | **Orange** bar (it names Claude): "I turned Claude into an entire company." |
+| 06 | 124 | @charliejhills | Rack-focus down into the org chart: 42 orange crabs light up |
+| 07 | 158 | @mimurchison | Video post, autoplays, push-in, **sound on**: tight cut of "how I'm using Claude Code as my primary system to run both my personal life and my company" |
+| 08 | 286 | @DeRonin_ | Article card, bar on "I run a $40k MRR agency with zero employees" |
+| 09 | 316 | @neropursue | Video focus: the motion gallery (orange dot). Aimed at a motion designer |
+| 10 | 352 | @finnardley | Text punch, bar "entire channel in 10 minutes" |
+| 11 | 380 | @finnardley | Secondary focus: their Sun-vanishes video counting down |
+| 12 | 410 | @IntCyberDigest | Bar on "Software is dead, long live software!" |
+| 13 | 436 | - | Pull out, fling: the feed smears, header stays sharp, "99+ new posts" |
+| 14 | 452 | @itsolelehmann (+ @humzaakhalid) | 1-2 frame flashes: "was just ONE PERSON", "with zero employees" |
+| 15 | 470 | @himanshubuildss | Hard catch, the biggest punch: "It's over." |
+| 16 | 500 | @himanshubuildss | Slow scroll down to the AI-made 3D sites video, then a hard cut into line 11 |
+
+Extra posts I found (not from Rachit): @itsolelehmann (Anthropic growth team = one person, 4.5M views) and @humzaakhalid (10-person company with zero employees), used only as flashes; @finnardley was found by searching for the Kurzgesagt post. The "one-person company MRR" visual = @DeRonin_'s article card.
+
+### Mike's clip (tight cut, from the source video, word times by speech-to-text)
+"how I'm using Claude Code" 22.64-24.20 / "as my primary system" 24.74-27.48 (drop the 1.7 s pause inside) / "to run both my personal life and my company" 28.36-31.72 (drop the pause before "my company"). About 5 s instead of 9.1 s. Jump cuts hidden by the push-in.
 
 ## Why the old version failed (client: "the effect of Twitter isn't coming off")
 Measured on `current/old_twitter_animation.mp4` (4.13 s, 23.976 fps). The feed is a narrow column about 200 px wide (about 10% of the frame), text about 8 px tall, and nothing is ever read. New posts just push in from the top, there's no phone, no scroll gesture, no stop and no focus. It reads as a texture, not as "I'm on Twitter". The fix is to make the viewer **read** a few posts at full size and **feel** the thumb (flick, coast, catch).
