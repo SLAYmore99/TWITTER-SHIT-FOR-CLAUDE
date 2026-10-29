@@ -1,8 +1,9 @@
 import { Easing } from "remotion";
 import { KEY, LINES, ORDER } from "./keyframes";
-import { aim, SceneState, scrollTo } from "./Scene";
+import { SceneState, scrollTo } from "./Scene";
 import { FeedItem } from "./ui/Phone";
-import { PostKey } from "./ui/Post";
+import { CW, POSTS, PostKey } from "./ui/Post";
+import { BODY, inRange, rangeOf, wrap } from "./ui/layout";
 
 export const FPS = 24000 / 1001;
 
@@ -19,7 +20,6 @@ const refScroll: Ease = (t) => {
   const i = Math.min(REF.length - 2, Math.floor(x));
   return (REF[i] + (REF[i + 1] - REF[i]) * (x - i)) / REF[REF.length - 1];
 };
-const SCROLL_F = REF.length - 1; // 41 f; ~95% there by f+24, the rest only creeps
 
 export const E = {
   ref: refScroll,
@@ -63,6 +63,17 @@ const MID = 426; // screen y (pts) at frame centre when reading
 const READ = 2.9;
 const REST = { fade: 0.32, blur: 3.2 }; // out of focus: blurred but visible (ref03)
 const to = (k: PostKey, part: "text" | "media" | "post" = "text") => scrollTo(ITEMS, k, MID, part);
+// what's shown lands dead centre: media on the media column, text on the highlighted phrase
+const MEDIA_X = 68 + CW / 2;
+const phraseX = (k: PostKey) => {
+  const p = POSTS[k];
+  const r = rangeOf(p.text, KEY[k]?.bar ?? KEY[k]?.lit);
+  const ws = wrap(p.text, CW, BODY.size, BODY.lineH, BODY.weight, LINES[k] ?? 6).lines.flatMap((l) => l.words).filter((w) => inRange(w, r));
+  if (!ws.length) return MEDIA_X;
+  const x0 = Math.min(...ws.map((w) => w.x));
+  const x1 = Math.max(...ws.map((w) => w.x + w.w));
+  return 68 + (x0 + x1) / 2;
+};
 
 const T = {
   scroll: new Track(to("noisy")),
@@ -98,84 +109,65 @@ const read = (k: PostKey, f: number, media = 0.22) => {
   P[k].media.move(f, f + 8, media);
 };
 const mark = (k: PostKey, f: number) => P[k].bar.move(f, f + 14, 1, E.bar);
-// the ref03 scroll. Leaving post blurs as the motion starts, arriving post
-// sharpens as it slows. Returns the frame the next beat can start (tail still creeping).
-const scroll = (f: number, from: PostKey, k: PostKey, zoom = READ, dy = 0, part: "text" | "media" = "text") => {
-  T.scroll.move(f, f + SCROLL_F, to(k, part), E.ref);
-  cam(f, f + 28, zoom, dy, E.ref);
-  unfocus(from, f, f + 9);
-  focus(k, f + 12, f + 26);
-  return f + 24;
+// the ref03 scroll, resampled to n frames (quick ~22-28, longer ~30). Leaving post
+// blurs as the motion starts, arriving post sharpens as it slows. Returns the frame
+// the next beat can start (the tail is still creeping, like the ref).
+const scroll = (f: number, n: number, from: PostKey, k: PostKey, zoom = READ, dy = 0, part: "text" | "media" = "text") => {
+  T.scroll.move(f, f + n, to(k, part) - dy, E.ref);
+  cam(f, f + Math.round(n * 0.7), zoom, 0, E.ref, part === "media" ? MEDIA_X : phraseX(k));
+  unfocus(from, f, f + Math.round(n * 0.22));
+  focus(k, f + Math.round(n * 0.3), f + Math.round(n * 0.65));
+  return f + Math.round(n * 0.58);
+};
+// inside one post: ease down from its text to its video, same curve, video comes up
+const intoMedia = (f: number, n: number, k: PostKey, zoom: number) => {
+  T.scroll.move(f, f + n, to(k, "media"), E.ref);
+  T.zoom.move(f, f + n, zoom, E.ref);
+  T.ax.move(f, f + n, MEDIA_X, E.ref);
+  P[k].media.move(f, f + Math.round(n * 0.6), 1);
 };
 
-// 01  X launch screen, then the first post racks into focus
-T.splashOp.move(0, 7, 1, E.out).move(14, 22, 0);
-T.splashScale.move(0, 7, 1, E.out).move(14, 22, 1.05);
-T.worldOp.move(22, 36, 1, E.out);
-T.worldBlur.move(22, 36, 0, E.out);
-T.zoom.move(22, 36, READ, E.out);
-focus("noisy", 22, 36);
-// 02  $2.4M at 18
-read("noisy", 44);
-mark("noisy", 52);
-// 03  even a 14-year-old
-let n = scroll(74, "noisy", "viipin", READ, 30);
+// Rachit's cut, max 10 s: calm, every hero centred, a gentle build (holds shorten).
+// 01  open on the eye: the post's video racks into focus, centred
+T.scroll.cut(0, to("rock", "media"));
+T.zoom.cut(0, 3.4);
+T.ax.cut(0, MEDIA_X);
+T.worldOp.move(0, 10, 1, E.out);
+T.worldBlur.move(0, 12, 0, E.out);
+focus("rock", 0, 1);
+read("rock", 0, 1);
+// 02  quick scroll: CLAUDE + YouTube = $$$$ / Even a 14-year-old can do it.
+let n = scroll(22, 28, "rock", "viipin", 3.1);
 read("viipin", n);
-mark("viipin", n + 8);
-// 04  software is dead (holds a little longer)
-n = scroll(128, "viipin", "intcyber", READ, 40);
-read("intcyber", n);
-mark("intcyber", n + 8);
-// 05  $40k MRR, zero employees
-n = scroll(192, "intcyber", "deronin", READ, 20, "media");
-read("deronin", n, 1);
-mark("deronin", n + 8);
-// 06  a scroll starts building... hard cut on its speed peak to: It's over.
-T.scroll.move(246, 255, to("deronin", "media") + 420, E.accel);
-unfocus("deronin", 246, 252);
-const CUT = 255;
-const overAy = aim(ITEMS, "himanshu", to("himanshu"), "text").ay;
-T.scroll.cut(CUT, to("himanshu"));
-T.ax.cut(CUT, 68 + 36);
-T.ay.cut(CUT, overAy);
-T.zoom.cut(CUT, 6.2);
-for (const k of new Set(ORDER)) P[k].fade.cut(CUT, 0);
-P.himanshu.fade.cut(CUT, 1);
-P.himanshu.blur.cut(CUT, 0);
-P.himanshu.dim.cut(CUT, 1);
-P.himanshu.media.cut(CUT, 0);
-mark("himanshu", CUT + 4);
-// the text alone, then the camera eases down as the video fades up
-T.scroll.move(290, 318, to("himanshu", "media"));
-cam(290, 318, READ);
-P.himanshu.media.move(290, 314, 1);
-for (const k of new Set(ORDER)) if (k !== "himanshu") P[k].fade.move(296, 318, REST.fade);
-// 07  kurzgesagt: text, then down onto the video
-n = scroll(334, "himanshu", "finn", READ, 50);
-read("finn", n);
-mark("finn", n + 8);
-T.scroll.move(388, 410, to("finn", "media"));
-cam(388, 410, READ);
-P.finn.media.move(388, 406, 1);
-// 08  the motion tools video
-n = scroll(430, "finn", "nero", 3.2, 0, "media");
+mark("viipin", n + 2);
+// 03  quick scroll: the motion tools video, 0:04 on
+n = scroll(56, 26, "viipin", "nero", 3.4, 0, "media");
 read("nero", n, 1);
-// 09  mike, sound on (110 f), then the hard cut out
-n = scroll(494, "nero", "mike", 3.2, 0, "media");
-read("mike", n, 1);
-T.zoom.move(522, 626, 3.4, (t) => t);
-export const DURATION = 630;
+// 04  a little longer: Software is dead (the REA card stays in view below it)
+n = scroll(90, 30, "nero", "intcyber", 2.9, -100);
+read("intcyber", n, 1);
+mark("intcyber", n + 4);
+// 05  quick: It's over. then down into the post to its video (0:04 on)
+n = scroll(132, 24, "intcyber", "himanshu", 3.4);
+read("himanshu", n);
+mark("himanshu", n + 2);
+intoMedia(160, 16, "himanshu", 3.4);
+// 06  quick: This is getting f*cking scary. then its spectrum video
+n = scroll(180, 22, "himanshu", "imryven", 3.4);
+read("imryven", n);
+mark("imryven", n + 2);
+intoMedia(207, 16, "imryven", 2.6);
+export const DURATION = 239; // 9.97 s
 
 // Media playing windows (composition frames). trimBefore is in the clip's own frames.
 // clock = [seconds into the ORIGINAL video where the clip starts, original length]
 // so the duration chip counts down the real remaining time, like X.
 export type MediaWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; clock?: [number, number] };
 export const MEDIA: Partial<Record<PostKey, MediaWin>> = {
-  noisy: { src: "vid/noisy.mp4", from: 40, clock: [1, 4129.3] },
-  himanshu: { src: "vid/himanshu.mp4", from: 292, clock: [0, 37.7] },
-  finn: { src: "vid/finn.mp4", from: 362, trimBefore: Math.round(2.0 * FPS), clock: [4, 30.22] },
-  nero: { src: "vid/nero.mp4", from: 456, trimBefore: Math.round(2.6 * FPS), clock: [9.6, 28.35] },
-  mike: { src: "vid/mike_tight.mp4", from: 516, volume: 1, clock: [22.7, 1162.9] },
+  rock: { src: "vid/rock.mp4", from: 0, trimBefore: Math.round(0.8 * FPS), clock: [9.3, 77.8] }, // clip starts 8.5 s
+  nero: { src: "vid/nero2.mp4", from: 66, trimBefore: Math.round(0.5 * FPS), clock: [4, 28.35] }, // clip starts 3.5 s
+  himanshu: { src: "vid/himanshu2.mp4", from: 162, trimBefore: Math.round(0.5 * FPS), clock: [4, 37.7] },
+  imryven: { src: "vid/imryven.mp4", from: 205, trimBefore: Math.round(5 * FPS), clock: [5, 15] },
 };
 
 // ---- evaluation ----------------------------------------------------------

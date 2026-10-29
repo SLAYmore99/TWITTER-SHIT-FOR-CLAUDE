@@ -3,16 +3,17 @@ import { FeedItem } from "./ui/Phone";
 import { PostKey, PostLook } from "./ui/Post";
 
 // One continuous feed, in scroll order.
-// Heroes (the posts we stop on) with blurred filler posts between them, so every
-// scroll travels through the feed like ref03. Fillers repeat; they're never read.
-export const HEROES: PostKey[] = ["noisy", "viipin", "intcyber", "deronin", "himanshu", "finn", "nero", "mike"];
-const FILL: PostKey[] = ["charlie", "olehmann", "humza"];
-export const ORDER: PostKey[] = HEROES.flatMap((h, i) => (i < HEROES.length - 1 ? [h, FILL[i % 3], FILL[(i + 1) % 3]] : [h]));
+// Heroes (Rachit's cut, 2026-10-29) with blurred filler posts between them, so every
+// scroll travels through the feed like ref03. Quick scrolls pass one filler, the
+// longer one (to Software is dead) passes three. Fillers are never read.
+export const HEROES: PostKey[] = ["rock", "viipin", "nero", "intcyber", "himanshu", "imryven"];
+export const ORDER: PostKey[] = ["rock", "noisy", "viipin", "charlie", "nero", "deronin", "olehmann", "finn", "intcyber", "humza", "himanshu", "mike", "imryven"];
 
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {
   noisy: { lit: "They built an automated business making $2.4M with Opus 5 at 18", bar: "making $2.4M with Opus 5 at 18", barColor: "white" },
-  viipin: { lit: "Even a 14-year-old can do it.", bar: "Even a 14-year-old can do it.", barColor: "white" },
+  viipin: { lit: "CLAUDE + YouTube = $$$$\nEven a 14-year-old can do it.", bar: "CLAUDE + YouTube = $$$$\nEven a 14-year-old can do it.", barColor: "white" },
+  imryven: { lit: "This is getting f*cking scary.", bar: "This is getting f*cking scary.", barColor: "white" },
   charlie: { lit: "I turned Claude into an entire company." }, // Rachit: no highlight on this one
   mike: { lit: "how I as a CEO am using Claude Code as my AI Chief of Staff" },
   deronin: { bar: "I run a $40k MRR agency with zero employees" },
@@ -25,7 +26,7 @@ export const KEY: Partial<Record<PostKey, PostLook>> = {
 };
 
 // Lines shown before "Show more": only what's being read.
-export const LINES: Partial<Record<PostKey, number>> = { noisy: 3, viipin: 2, charlie: 1, mike: 3, nero: 3, finn: 2, intcyber: 8, olehmann: 4, humza: 4, himanshu: 1 };
+export const LINES: Partial<Record<PostKey, number>> = { noisy: 3, viipin: 2, charlie: 1, mike: 3, nero: 3, finn: 2, intcyber: 8, olehmann: 4, humza: 4, himanshu: 1, rock: 2, imryven: 1 };
 
 // Feed for one moment. The focused post gets its key-text look; every other
 // post recedes to `rest` opacity so only one thing reads at a time (idk style).

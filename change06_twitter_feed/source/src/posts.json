@@ -118,7 +118,7 @@
   "bookmarks": "938",
   "media": {
    "type": "video",
-   "src": "media/play_nero.jpg",
+   "src": "media/play_nero2.jpg",
    "w": 1676,
    "h": 1080,
    "dur": "0:28"
@@ -180,7 +180,7 @@
   "bookmarks": "3.4K",
   "media": {
    "type": "video",
-   "src": "media/play_himanshu.jpg",
+   "src": "media/play_himanshu2.jpg",
    "w": 1920,
    "h": 1080,
    "dur": "0:37"
@@ -226,5 +226,47 @@
    "h": 3600
   },
   "url": "https://x.com/humzaakhalid/status/2075124923253813587"
+ },
+ "rock": {
+  "id": "2114728296034226583",
+  "name": "Gianluca Lomarco",
+  "handle": "__rockbiter",
+  "avatar": "av/2114728296034226583.jpg",
+  "date": "Oct 26",
+  "text": "Everyone's using Claude Opus 5.5 to build entire worlds in #threejs.\n\nI spent 7 days on a single human eye.\n\nNo textures. No 3D models. No photos. Just math, light and ~400 parameters.\n\nSound on 🔊 Link below 👇",
+  "replies": "164",
+  "reposts": "193",
+  "likes": "3.2K",
+  "views": "198K",
+  "bookmarks": "1.7K",
+  "media": {
+   "type": "video",
+   "src": "media/play_rock.jpg",
+   "w": 1920,
+   "h": 1080,
+   "dur": "1:17"
+  },
+  "url": "https://x.com/__rockbiter/status/2114728296034226583"
+ },
+ "imryven": {
+  "id": "2115564646757220363",
+  "name": "Ryven",
+  "handle": "imryven",
+  "avatar": "av/2115564646757220363.jpg",
+  "date": "Oct 28",
+  "text": "This is getting f*cking scary.\n\nA 23-year-old developer from China launched 300 Claude Code agents at once, then made every single one of them prove its work.\n\nHis numbers:\n\n→ 300 agents researching and writing at the same moment\n\n→ every claim checked against its source in about 100 ms\n\n→ anything that fails goes back for a rewrite, and only verified pages get saved\n\n→ 100+ company profiles, three passes, zero errors left\n\n→ all of it filed into an Obsidian vault\n\nThe trick is the split. one model does the work. a cheaper one has a single job: decide whether the claim is true.\n\nThat is the line between a swarm and a mess. 300 agents with no checker give you 300 confident guesses.\n\nIf you build this, give the checker the claim and the source, never the researcher’s reasoning. it judges the evidence, not the argument.\n\nWeeks of analyst work, collapsed into one run.\n\nIt’s the Second Brain idea scaled up: a swarm to produce, a checker to trust, a vault to keep.\n\nSave this if you’re building one.",
+  "replies": "12",
+  "reposts": "8",
+  "likes": "48",
+  "views": "11K",
+  "bookmarks": "87",
+  "media": {
+   "type": "video",
+   "src": "media/play_imryven.jpg",
+   "w": 1080,
+   "h": 1350,
+   "dur": "0:15"
+  },
+  "url": "https://x.com/imryven/status/2115564646757220363"
  }
 }
