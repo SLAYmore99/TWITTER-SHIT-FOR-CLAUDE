@@ -2,8 +2,7 @@ import { Easing } from "remotion";
 import { KEY, LINES, ORDER } from "./keyframes";
 import { SceneState, scrollTo } from "./Scene";
 import { FeedItem } from "./ui/Phone";
-import { CW, POSTS, PostKey } from "./ui/Post";
-import { BODY, inRange, rangeOf, wrap } from "./ui/layout";
+import { CW, PostKey } from "./ui/Post";
 
 export const FPS = 24000 / 1001;
 
@@ -60,20 +59,11 @@ class Track {
 }
 
 const MID = 426; // screen y (pts) at frame centre when reading
-const READ = 2.9;
+const READ = 3.1; // one zoom for the whole piece: a pure vertical scroll, nothing slides sideways
 const REST = { fade: 0.32, blur: 3.2 }; // out of focus: blurred but visible (ref03)
 const to = (k: PostKey, part: "text" | "media" | "post" = "text") => scrollTo(ITEMS, k, MID, part);
-// what's shown lands dead centre: media on the media column, text on the highlighted phrase
+// one fixed horizontal camera position: the content column
 const MEDIA_X = 68 + CW / 2;
-const phraseX = (k: PostKey) => {
-  const p = POSTS[k];
-  const r = rangeOf(p.text, KEY[k]?.bar ?? KEY[k]?.lit);
-  const ws = wrap(p.text, CW, BODY.size, BODY.lineH, BODY.weight, LINES[k] ?? 6).lines.flatMap((l) => l.words).filter((w) => inRange(w, r));
-  if (!ws.length) return MEDIA_X;
-  const x0 = Math.min(...ws.map((w) => w.x));
-  const x1 = Math.max(...ws.map((w) => w.x + w.w));
-  return 68 + (x0 + x1) / 2;
-};
 
 const T = {
   scroll: new Track(to("noisy")),
@@ -114,7 +104,7 @@ const mark = (k: PostKey, f: number) => P[k].bar.move(f, f + 14, 1, E.bar);
 // the next beat can start (the tail is still creeping, like the ref).
 const scroll = (f: number, n: number, from: PostKey, k: PostKey, zoom = READ, dy = 0, part: "text" | "media" = "text") => {
   T.scroll.move(f, f + n, to(k, part) - dy, E.ref);
-  cam(f, f + Math.round(n * 0.7), zoom, 0, E.ref, part === "media" ? MEDIA_X : phraseX(k));
+  cam(f, f + Math.round(n * 0.7), zoom, 0, E.ref, MEDIA_X); // fixed horizontal: the UI never slides sideways (Rachit)
   unfocus(from, f, f + Math.round(n * 0.22));
   focus(k, f + Math.round(n * 0.3), f + Math.round(n * 0.65));
   return f + Math.round(n * 0.58);
@@ -123,40 +113,39 @@ const scroll = (f: number, n: number, from: PostKey, k: PostKey, zoom = READ, dy
 const intoMedia = (f: number, n: number, k: PostKey, zoom: number) => {
   T.scroll.move(f, f + n, to(k, "media"), E.ref);
   T.zoom.move(f, f + n, zoom, E.ref);
-  T.ax.move(f, f + n, MEDIA_X, E.ref);
   P[k].media.move(f, f + Math.round(n * 0.6), 1);
 };
 
-// Rachit's cut, max 10 s: calm, every hero centred, a gentle build (holds shorten).
-// 01  open on the eye: the post's video racks into focus, centred
+// Rachit's cut, max 10 s: calm, a gentle build (holds shorten). Fixed zoom + fixed x: only the feed scrolls.
+// 01  open on the eye: the post's video racks into focus
 T.scroll.cut(0, to("rock", "media"));
-T.zoom.cut(0, 3.4);
+T.zoom.cut(0, READ);
 T.ax.cut(0, MEDIA_X);
 T.worldOp.move(0, 10, 1, E.out);
 T.worldBlur.move(0, 12, 0, E.out);
 focus("rock", 0, 1);
 read("rock", 0, 1);
 // 02  quick scroll: CLAUDE + YouTube = $$$$ / Even a 14-year-old can do it.
-let n = scroll(22, 28, "rock", "viipin", 3.1);
+let n = scroll(22, 28, "rock", "viipin", READ);
 read("viipin", n);
 mark("viipin", n + 2);
 // 03  quick scroll: the motion tools video, 0:04 on
-n = scroll(56, 26, "viipin", "nero", 3.4, 0, "media");
+n = scroll(56, 26, "viipin", "nero", READ, 0, "media");
 read("nero", n, 1);
 // 04  a little longer: Software is dead (the REA card stays in view below it)
-n = scroll(90, 30, "nero", "intcyber", 2.9, -100);
+n = scroll(90, 30, "nero", "intcyber", READ, -100);
 read("intcyber", n, 1);
 mark("intcyber", n + 4);
 // 05  quick: It's over. then down into the post to its video (0:04 on)
-n = scroll(132, 24, "intcyber", "himanshu", 3.4);
+n = scroll(132, 24, "intcyber", "himanshu", READ);
 read("himanshu", n);
 mark("himanshu", n + 2);
-intoMedia(160, 16, "himanshu", 3.4);
+intoMedia(160, 16, "himanshu", READ);
 // 06  quick: This is getting f*cking scary. then its spectrum video
-n = scroll(180, 22, "himanshu", "imryven", 3.4);
+n = scroll(180, 22, "himanshu", "imryven", READ);
 read("imryven", n);
 mark("imryven", n + 2);
-intoMedia(207, 16, "imryven", 2.6);
+intoMedia(207, 16, "imryven", READ);
 export const DURATION = 239; // 9.97 s
 
 // Media playing windows (composition frames). trimBefore is in the clip's own frames.
