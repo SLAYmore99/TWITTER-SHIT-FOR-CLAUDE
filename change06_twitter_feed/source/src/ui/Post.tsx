@@ -25,15 +25,19 @@ export type PostLook = {
   dim?: number; // 0..1, how far non-lit text drops toward 35%
   mediaP?: number; // optional media focus (scale up inside card) 0..1
   maxLines?: number;
+  noMedia?: boolean;
+  mediaOpacity?: number; // media recedes while its text is held
+  fade?: number; // whole-post opacity (posts that are not in focus recede)
 };
 
-export const layoutPost = (p: PostData, maxLines = 6) => {
+export const layoutPost = (p: PostData, maxLines = 6, noMedia = false) => {
   const { lines, truncated } = wrap(p.text, CW, BODY.size, BODY.lineH, BODY.weight, maxLines);
   const textTop = 12 + 20 + 1;
   const textH = lines.length * BODY.lineH + (truncated ? BODY.lineH : 0);
   const m = p.media;
   let mh = 0;
-  if (m.type === "article") mh = (CW * m.h) / m.w + 10 + wrap(m.title ?? "", CW - 24, 15, 20, 700).lines.length * 20 + wrap(m.preview ?? "", CW - 24, 15, 20, 400, 2).lines.length * 20 + 12;
+  if (noMedia) mh = 0;
+  else if (m.type === "article") mh = (CW * m.h) / m.w + 10 + wrap(m.title ?? "", CW - 24, 15, 20, 700).lines.length * 20 + wrap(m.preview ?? "", CW - 24, 15, 20, 400, 2).lines.length * 20 + 12;
   else if (m) mh = Math.min((CW * m.h) / m.w, CW * 1.25);
   const mediaTop = textTop + textH + (lines.length ? 12 : 0);
   const actionsTop = mediaTop + (mh ? mh + 12 : 0);
@@ -101,7 +105,7 @@ const TextBlock: React.FC<{ p: PostData; lines: Line[]; truncated: boolean; look
     <div style={{ position: "absolute", left: CX, top, width: CW }}>
       <MarkedText text={p.text} lines={lines} look={look} dimOpacity={dimOpacity} />
       {truncated && (
-        <div style={{ position: "absolute", top: lines.length * BODY.lineH, font: `${BODY.size}px/${BODY.lineH}px ${FONT}`, color: C.blue, opacity: dimOpacity }}>
+        <div style={{ position: "absolute", top: lines.length * BODY.lineH, font: `${BODY.size}px/${BODY.lineH}px ${FONT}`, color: C.blue, opacity: (look.dim ?? 0) > 0 ? 0.1 : 1 }}>
           Show more
         </div>
       )}
@@ -146,12 +150,12 @@ const Media: React.FC<{ p: PostData; top: number; h: number; look: PostLook; dim
 
 export const Post: React.FC<{ k: PostKey; look?: PostLook }> = ({ k, look = {} }) => {
   const p = POSTS[k];
-  const L = layoutPost(p, look.maxLines ?? 6);
+  const L = layoutPost(p, look.maxLines ?? 6, look.noMedia);
   const dimOpacity = 1 - 0.65 * (look.dim ?? 0);
   const row = { font: `400 15px/20px ${FONT}` };
   const acts: [React.FC, string][] = [[Reply, p.replies], [Repost, p.reposts], [Like, p.likes], [Views, p.views]];
   return (
-    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: C.bg }}>
+    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: C.bg, opacity: look.fade ?? 1 }}>
       <Img src={staticFile(p.avatar)} style={{ position: "absolute", left: PAD, top: 12, width: AV, height: AV, borderRadius: AV / 2, opacity: dimOpacity }} />
       <div style={{ position: "absolute", left: CX, top: 12, width: CW, height: 20, display: "flex", alignItems: "center", gap: 2, whiteSpace: "nowrap", opacity: dimOpacity }}>
         <span style={{ ...row, fontWeight: 700, color: C.text, overflow: "hidden", textOverflow: "ellipsis", maxWidth: 170 }}>{p.name}</span>
@@ -160,7 +164,7 @@ export const Post: React.FC<{ k: PostKey; look?: PostLook }> = ({ k, look = {} }
         <div style={{ marginLeft: "auto" }}><More /></div>
       </div>
       <TextBlock p={p} lines={L.lines} truncated={L.truncated} look={look} top={L.textTop} />
-      {L.mh > 0 && <Media p={p} top={L.mediaTop} h={L.mh} look={look} dimOpacity={dimOpacity} />}
+      {L.mh > 0 && <div style={{ opacity: look.mediaOpacity ?? 1 }}><Media p={p} top={L.mediaTop} h={L.mh} look={look} dimOpacity={dimOpacity} /></div>}
       <div style={{ position: "absolute", left: CX, top: L.actionsTop, width: CW, height: 20, display: "flex", alignItems: "center", opacity: dimOpacity }}>
         {acts.map(([I, n], i) => (
           <div key={i} style={{ display: "flex", alignItems: "center", gap: 4, width: i < 3 ? 70 : 62 }}>

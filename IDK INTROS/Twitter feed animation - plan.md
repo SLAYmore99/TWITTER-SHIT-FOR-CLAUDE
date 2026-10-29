@@ -3,11 +3,23 @@
 Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animations - tracker]], row 2). Brief: [[Context - Twitter animation (cloud session)]]. Media: `change06_twitter_feed/` in the repo (current version, 5 references, 2 Figma frames).
 
 ## Current state
-- Status: **rough key frames v1 sent** (2026-10-29), 16 stills rendered from the real Remotion build: `change06_twitter_feed/keyframes/v1/` (sheet: `_sheet_v1.png`).
-- Next: Rachit guides on the key frames, then the 540p preview with motion.
+- Status: **key frames v2 sent** (2026-10-29), minimal redesign after Rachit's note on v1 ("phone much more minimal, everything looks chaotic"): `change06_twitter_feed/keyframes/v2/` (sheet `_sheet_v2.png`). v1 is superseded (kept in `keyframes/v1/`).
+- Next: Rachit's OK on v2, then the 540p preview with motion.
 - All tweets pulled from X (text, counts, avatars, media) into `change06_twitter_feed/tweets/<id>/`. Network was opened to full internet on 2026-10-29.
 
-## Key frames v1 (2026-10-29): the sequence
+## Design system v2: minimal (Rachit, 2026-10-29)
+Learned from the idk references (ref04, ref05): a pure black void, one thing to read at a time, nothing on screen that isn't being read. This replaces the "phone: subtle and premium" section below (the tilt, titanium bezel, glass and rim light are gone).
+- **Flat camera.** No 3D tilt or perspective. The camera only zooms and moves straight. Moves are smooth; cuts land on the speed peak.
+- **The phone is a hairline:** a 0.6 pt outline at 16% white plus the island. No frame, no glass, no glow. It's seen whole and small only at the wake and the overload. When reading, its two edges stay as thin vertical lines at the frame sides, the only hint of a device.
+- **Header = the X mark only.** No status bar, tabs or avatar. The new-posts pill is a white capsule with black text.
+- **One post at a time.** The focused post is full white. Every other post recedes to 6-10% (still felt as a feed while scrolling, never read).
+- **Inside the focused post:** key text full white with a faint glow, the rest at 35%. "Show more" at 10%. Each post shows only the lines being read.
+- **Framing:** text posts at 2.9 px/pt (the post about 1,000 px wide, big black margins, like idk), videos at 2.9-3.2, "It's over." at 6.2. Posts are always centred horizontally.
+- **Highlighter** as before: a marker that reveals black letters as it passes. Orange only when the post names Claude.
+- **Overload:** a clean fast scroll of the small phone (light blur only, no smear) plus 2-frame hard cuts to single lines. The v1 streak smear read as noise.
+- **Media recedes during a text hold** (for example "It's over.") and comes back when the camera moves to it.
+
+## Key frames (v1 sequence, kept in v2): the sequence
 One continuous dark-mode feed, in this scroll order. The age ladder opens it ($2.4M at 18, then "even a 14-year-old"), then the videos of people doing wild things with Claude, then it collapses ("Software is dead", the flashes, "It's over."). About 21 s at 23.976.
 
 | KF | Frame | Post | What happens |
