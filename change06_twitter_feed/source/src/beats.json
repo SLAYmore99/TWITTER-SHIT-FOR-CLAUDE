@@ -1,0 +1,16 @@
+{
+  "_": "Shared by timeline.ts and sfx.py. Frames @23.976. scroll: start f, length n (the marker starts at f + 0.8n, once the post has settled). inner: scroll down inside a post to its video.",
+  "end": 287,
+  "sweep": 12,
+  "scrolls": [
+    { "f": 20, "n": 28, "from": "rock", "to": "viipin" },
+    { "f": 68, "n": 28, "from": "viipin", "to": "nero", "part": "media" },
+    { "f": 102, "n": 30, "from": "nero", "to": "intcyber", "dy": -100 },
+    { "f": 154, "n": 26, "from": "intcyber", "to": "himanshu" },
+    { "f": 218, "n": 26, "from": "himanshu", "to": "imryven" }
+  ],
+  "inner": [
+    { "f": 201, "n": 16, "k": "himanshu" },
+    { "f": 265, "n": 14, "k": "imryven" }
+  ]
+}

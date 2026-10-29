@@ -5,23 +5,48 @@ Whooshes are driven by the same measured ref03 scroll curve as the animation
 Ticks mark each highlight start, and a soft tap marks the slide-up open.
 Run:  python3 sfx.py   ->  public/sfx_stem.wav  (48 kHz stereo, 24-bit)
 """
+import json
 import wave
 
 import numpy as np
 
 SR = 48000
 FPS = 24000 / 1001
-DUR_F = 239
+BEATS = json.load(open("src/beats.json"))
+DUR_F = BEATS["end"]
 N = int(round(DUR_F / FPS * SR))
 rng = np.random.default_rng(7)
 
 # ref03 scroll, cumulative (timeline.ts REF)
 REF = np.array([0, 1, 5, 14, 28, 50, 83, 131, 197, 281, 373, 461, 532, 592, 644, 692, 732, 768, 800, 828, 853, 876, 897, 916, 933, 949, 963, 976, 988, 999, 1009, 1018, 1026, 1033, 1040, 1046, 1051, 1056, 1061, 1065, 1068, 1070], float)
 
-# (start frame, length in frames, loudness) - from timeline.ts
-SCROLLS = [(22, 28, 1.0), (56, 26, 1.0), (90, 30, 1.1), (132, 24, 1.0), (160, 16, 0.55), (180, 22, 1.0), (207, 16, 0.55)]
-TICKS = [40, 111, 148, 195]  # highlight starts
+# scrolls, inner scrolls and marker starts, from the same beats.json as the animation
+SCROLLS = [(b["f"], b["n"], 1.0) for b in BEATS["scrolls"]] + [(b["f"], b["n"], 0.55) for b in BEATS["inner"]]
+TICKS = [b["f"] + round(b["n"] * 0.8) for b in BEATS["scrolls"] if b["to"] != "nero"]  # highlight starts
 TAPS = [0]  # slide-up open
+
+
+def bezier(x1, y1, x2, y2):
+    """CSS cubic-bezier as a function of t (solved by bisection), same as Remotion's Easing.bezier."""
+    def f(t):
+        lo, hi = 0.0, 1.0
+        for _ in range(40):
+            m = (lo + hi) / 2
+            x = 3 * (1 - m) ** 2 * m * x1 + 3 * (1 - m) * m * m * x2 + m**3
+            lo, hi = (m, hi) if x < t else (lo, m)
+        m = (lo + hi) / 2
+        return 3 * (1 - m) ** 2 * m * y1 + 3 * (1 - m) * m * m * y2 + m**3
+    return np.vectorize(f)
+
+
+calm = bezier(0.45, 0, 0.2, 1)
+
+
+def scroll_curve(t):
+    """timeline.ts E.ref: 45% the measured ref03 curve + 55% a calm in-out."""
+    ref = np.interp(t * (len(REF) - 1), np.arange(len(REF)), REF) / REF[-1]
+    return 0.45 * ref + 0.55 * calm(t)
+
 
 t_frames = np.arange(N) / SR * FPS
 
@@ -41,13 +66,15 @@ def svf_bandpass(x, fc, q=0.9):
 
 
 def whoosh_env():
-    """Speed curve of every scroll, normalised: drives level and brightness."""
+    """Speed of every scroll (same curve as the picture), normalised: drives level and brightness."""
     v = np.zeros(N)
+    grid = np.linspace(0, 1, 401)
+    vel = np.gradient(scroll_curve(grid), grid)
+    vel /= vel.max()
     for f0, n, g in SCROLLS:
-        vel = np.diff(REF) / REF[-1]  # per-step share of the travel
-        x = (t_frames - f0) / n * len(vel)
-        inside = (x >= 0) & (x < len(vel))
-        v[inside] = np.maximum(v[inside], g * np.interp(x[inside], np.arange(len(vel)), vel) / vel.max())
+        x = (t_frames - f0) / n
+        inside = (x >= 0) & (x <= 1)
+        v[inside] = np.maximum(v[inside], g * np.interp(x[inside], grid, vel))
     return v
 
 

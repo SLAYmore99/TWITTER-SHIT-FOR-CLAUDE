@@ -97,14 +97,17 @@ const MarkedText: React.FC<{
         if (w <= 0) return null;
         const col = orange ? C.claude : C.hl;
         const rgb = orange ? "217,119,87" : C.hlRgb;
-        const sweeping = w < len;
-        // marker, not a box: a bit shorter than the line, soft leading edge while it moves
+        // soft leading edge while sweeping; it shrinks to nothing over the last 12% so the bar never snaps
+        const done = Math.min(1, Math.max(0, (w / len - 0.88) / 0.12));
+        const feather = 6 * (1 - done);
+        const pad = 3 * done; // right padding grows in as the feather goes
+        // marker, not a box: a bit shorter than the line
         return (
           <React.Fragment key={i}>
-            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y + 1.5, width: w + 6 + (sweeping ? 5 : 0), height: BODY.lineH - 2.5, borderRadius: 2.5,
-              background: sweeping ? `linear-gradient(90deg, ${col} 0, ${col} calc(100% - 6px), rgba(${rgb},0) 100%)` : col,
+            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y + 1.5, width: w + 3 + pad + feather, height: BODY.lineH - 2.5, borderRadius: 2.5,
+              background: feather > 0.05 ? `linear-gradient(90deg, ${col} 0, ${col} calc(100% - ${feather}px), rgba(${rgb},0) 100%)` : col,
               boxShadow: `0 0 14px rgba(${rgb},0.28)` }} />
-            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y, width: w + 3, height: BODY.lineH, overflow: "hidden" }}>
+            <div style={{ position: "absolute", left: b.x0 - 3, top: b.l.y, width: w + 3 + pad, height: BODY.lineH, overflow: "hidden" }}>
               {b.ws.map((wd, wi) => (
                 <span key={wi} style={{ position: "absolute", left: wd.x - b.x0 + 3, top: 0, font, color: orange ? "#140805" : "#0B0B00", whiteSpace: "pre" }}>{wd.text}</span>
               ))}

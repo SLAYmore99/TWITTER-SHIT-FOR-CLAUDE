@@ -5,9 +5,9 @@ import { PostKey, PostLook } from "./ui/Post";
 // One continuous feed, in scroll order.
 // Heroes (Rachit's cut, 2026-10-29) with blurred filler posts between them, so every
 // scroll travels through the feed like ref03. Quick scrolls pass one filler, the
-// longer one (to Software is dead) passes three. Fillers are never read.
+// longer one (to Software is dead) passes two. Fillers are never read.
 export const HEROES: PostKey[] = ["rock", "viipin", "nero", "intcyber", "himanshu", "imryven"];
-export const ORDER: PostKey[] = ["rock", "noisy", "viipin", "charlie", "nero", "deronin", "olehmann", "finn", "intcyber", "humza", "himanshu", "mike", "imryven"];
+export const ORDER: PostKey[] = ["rock", "noisy", "viipin", "charlie", "nero", "deronin", "olehmann", "intcyber", "humza", "himanshu", "mike", "imryven"];
 
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {
