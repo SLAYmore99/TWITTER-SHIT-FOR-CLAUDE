@@ -4,7 +4,8 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
 
 ## Current state
 - Status: **key frames v2 sent** (2026-10-29), minimal redesign after Rachit's note on v1 ("phone much more minimal, everything looks chaotic"): `change06_twitter_feed/keyframes/v2/` (sheet `_sheet_v2.png`). v1 is superseded (kept in `keyframes/v1/`).
-- Next: Rachit's OK on v2, then the 540p preview with motion.
+- **540p preview v1 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v1_540p.mp4`, 712 frames = 29.7 s @ 23.976, real video playback in the posts, VO line 10 at the start, Mike's tight cut with his audio (normalised from -35 to -18.6 dB mean). Timeline source: `change06_twitter_feed/source/src/timeline.ts`.
+- Next: Rachit judges motion + tweet selection, then the final ProRes 4444 alpha render.
 - All tweets pulled from X (text, counts, avatars, media) into `change06_twitter_feed/tweets/<id>/`. Network was opened to full internet on 2026-10-29.
 
 ## Design system v2: minimal (Rachit, 2026-10-29)

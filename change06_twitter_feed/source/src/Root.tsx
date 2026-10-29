@@ -2,6 +2,8 @@ import React from "react";
 import { Composition, useCurrentFrame } from "remotion";
 import { KEYFRAMES } from "./keyframes";
 import { Scene } from "./Scene";
+import { Montage } from "./Montage";
+import { DURATION, FPS } from "./timeline";
 
 const fmt = (f: number) => {
   const s = f / (24000 / 1001);
@@ -18,5 +20,6 @@ const KeyframeSheet: React.FC<{ labels: boolean }> = ({ labels }) => {
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="Keyframes" component={KeyframeSheet} durationInFrames={KEYFRAMES.length} fps={1} width={1920} height={1080} defaultProps={{ labels: true }} />
+    <Composition id="TwitterFeed" component={Montage} durationInFrames={DURATION} fps={FPS} width={1920} height={1080} />
   </>
 );

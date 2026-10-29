@@ -1,5 +1,7 @@
 import React from "react";
-import { Img, staticFile } from "remotion";
+import { Video } from "@remotion/media";
+import { createContext, useContext } from "react";
+import { Img, Loop, Sequence, staticFile } from "remotion";
 import posts from "../posts.json";
 import { BODY, FONT, inRange, Line, rangeOf, wrap } from "./layout";
 import { Bookmark, C, Like, More, Muted, Reply, Repost, Share, Verified, Views } from "./icons";
@@ -8,6 +10,10 @@ export type PostData = (typeof posts)["noisy"] & {
   media: { type: string; src: string; w: number; h: number; dur?: string; title?: string; preview?: string };
 };
 export type PostKey = keyof typeof posts;
+
+// Which post videos play, and when (keyed by post id). Empty = posters only.
+export type PlayWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; durationInFrames?: number };
+export const PlayCtx = createContext<Record<string, PlayWin>>({});
 export const POSTS = posts as unknown as Record<PostKey, PostData>;
 
 // Layout in phone points (1 pt = 1 css px inside the phone).
@@ -133,9 +139,21 @@ const Media: React.FC<{ p: PostData; top: number; h: number; look: PostLook; dim
     );
   }
   const s = 1 + 0.0 * (look.mediaP ?? 0);
+  const win = useContext(PlayCtx)[p.id];
   return (
     <div style={box}>
       <Img src={staticFile(m.src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(s) }} />
+      {win && (
+        <Sequence from={win.from} layout="none">
+          {win.loop ? (
+            <Loop durationInFrames={win.durationInFrames ?? 88} layout="none">
+              <Video src={staticFile(win.src)} muted objectFit="cover" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
+            </Loop>
+          ) : (
+            <Video src={staticFile(win.src)} trimBefore={win.trimBefore} volume={win.volume ?? 0} muted={!win.volume} objectFit="cover" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
+          )}
+        </Sequence>
+      )}
       {m.type === "video" && (
         <>
           <div style={{ position: "absolute", left: 8, bottom: 8, padding: "1px 5px", borderRadius: 4, background: "rgba(0,0,0,0.75)", font: `500 12px/16px ${FONT}`, color: "#fff" }}>{m.dur}</div>

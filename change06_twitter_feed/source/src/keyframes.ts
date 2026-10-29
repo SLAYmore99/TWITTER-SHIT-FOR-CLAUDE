@@ -21,7 +21,7 @@ export const KEY: Partial<Record<PostKey, PostLook>> = {
 };
 
 // Lines shown before "Show more": only what's being read.
-const LINES: Partial<Record<PostKey, number>> = { noisy: 3, viipin: 2, charlie: 1, mike: 3, nero: 3, finn: 2, intcyber: 8, olehmann: 4, humza: 4, himanshu: 1 };
+export const LINES: Partial<Record<PostKey, number>> = { noisy: 3, viipin: 2, charlie: 1, mike: 3, nero: 3, finn: 2, intcyber: 8, olehmann: 4, humza: 4, himanshu: 1 };
 
 // Feed for one moment. The focused post gets its key-text look; every other
 // post recedes to `rest` opacity so only one thing reads at a time (idk style).
