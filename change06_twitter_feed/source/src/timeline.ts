@@ -2,7 +2,7 @@ import { Easing } from "remotion";
 import { KEY, LINES, ORDER } from "./keyframes";
 import { SceneState, scrollTo } from "./Scene";
 import { FeedItem } from "./ui/Phone";
-import { CW, PostKey } from "./ui/Post";
+import { PostKey } from "./ui/Post";
 
 export const FPS = 24000 / 1001;
 
@@ -64,8 +64,8 @@ const MID = 426; // screen y (pts) at frame centre when reading
 const READ = 3.1; // one zoom for the whole piece: a pure vertical scroll, nothing slides sideways
 const REST = { fade: 0.32, blur: 3.2 }; // out of focus: blurred but visible (ref03)
 const to = (k: PostKey, part: "text" | "media" | "post" = "text") => scrollTo(ITEMS, k, MID, part);
-// one fixed horizontal camera position: the content column
-const MEDIA_X = 68 + CW / 2;
+// one fixed horizontal camera position: the screen centred in frame, like idk (Rachit)
+const SCREEN_X = 393 / 2;
 
 const T = {
   scroll: new Track(to("noisy")),
@@ -107,7 +107,7 @@ const mark = (k: PostKey, f: number) => P[k].bar.move(f, f + 14, 1, E.bar);
 // the next beat can start (the tail is still creeping, like the ref).
 const scroll = (f: number, n: number, from: PostKey, k: PostKey, zoom = READ, dy = 0, part: "text" | "media" = "text") => {
   T.scroll.move(f, f + n, to(k, part) - dy, E.ref);
-  cam(f, f + Math.round(n * 0.7), zoom, 0, E.ref, MEDIA_X); // fixed horizontal: the UI never slides sideways (Rachit)
+  cam(f, f + Math.round(n * 0.7), zoom, 0, E.ref, SCREEN_X); // fixed horizontal: the UI never slides sideways (Rachit)
   unfocus(from, f, f + Math.round(n * 0.22));
   focus(k, f + Math.round(n * 0.3), f + Math.round(n * 0.65));
   return f + Math.round(n * 0.58);
@@ -123,7 +123,7 @@ const intoMedia = (f: number, n: number, k: PostKey, zoom: number) => {
 // 01  open on the eye: the post's video racks into focus
 T.scroll.cut(0, to("rock", "media"));
 T.zoom.cut(0, READ);
-T.ax.cut(0, MEDIA_X);
+T.ax.cut(0, SCREEN_X);
 // in-animation = "slide up" (as in ref04 at 1.55 s): 50 px below, rises over 10 f, opacity 0-100% over the first 5 f, linear
 T.worldDy.move(0, 10, 0, E.slideUp);
 T.worldOp.move(0, 5, 1, E.linear);

@@ -14,6 +14,8 @@ export type PostKey = keyof typeof posts;
 // Which post videos play, and when (keyed by post id). Empty = posters only.
 export type PlayWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; durationInFrames?: number; clock?: [number, number] };
 export const PlayCtx = createContext<Record<string, PlayWin>>({});
+// true for the alpha render: no black behind posts, so it sits on any background
+export const AlphaCtx = createContext(false);
 export const POSTS = posts as unknown as Record<PostKey, PostData>;
 
 // Layout in phone points (1 pt = 1 css px inside the phone).
@@ -187,11 +189,12 @@ const Media: React.FC<{ p: PostData; top: number; h: number; look: PostLook; dim
 export const Post: React.FC<{ k: PostKey; look?: PostLook }> = ({ k, look = {} }) => {
   const p = POSTS[k];
   const L = layoutPost(p, look.maxLines ?? 6, look.noMedia);
+  const alpha = useContext(AlphaCtx);
   const dimOpacity = 1 - 0.65 * (look.dim ?? 0);
   const row = { font: `400 15px/20px ${FONT}` };
   const acts: [React.FC, string][] = [[Reply, p.replies], [Repost, p.reposts], [Like, p.likes], [Views, p.views]];
   return (
-    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: C.bg, opacity: look.fade ?? 1, filter: look.blur ? `blur(${look.blur}px)` : undefined }}>
+    <div style={{ position: "relative", width: SCREEN_W, height: L.h, borderBottom: `1px solid ${C.line}`, background: alpha ? "transparent" : C.bg, opacity: look.fade ?? 1, filter: look.blur ? `blur(${look.blur}px)` : undefined }}>
       <Img src={staticFile(p.avatar)} style={{ position: "absolute", left: PAD, top: 12, width: AV, height: AV, borderRadius: AV / 2, opacity: dimOpacity }} />
       <div style={{ position: "absolute", left: CX, top: 12, width: CW, height: 20, display: "flex", alignItems: "center", gap: 2, whiteSpace: "nowrap", opacity: dimOpacity }}>
         <span style={{ ...row, fontWeight: 700, color: C.text, overflow: "hidden", textOverflow: "ellipsis", maxWidth: 170 }}>{p.name}</span>

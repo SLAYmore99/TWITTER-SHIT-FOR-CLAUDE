@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { C, XLogo } from "./icons";
 import { FONT } from "./layout";
-import { layoutPost, Post, PostKey, PostLook, POSTS, SCREEN_W } from "./Post";
+import { AlphaCtx, layoutPost, Post, PostKey, PostLook, POSTS, SCREEN_W } from "./Post";
 
 export const SCREEN_H = 852;
 export const HEADER_H = 104; // minimal header: island + X mark only
@@ -44,10 +44,11 @@ export type PhoneProps = {
 // The phone, drawn at 1 css px = 1 pt. Origin = top-left of the SCREEN.
 export const Phone: React.FC<PhoneProps> = ({ items, scroll, screenOn = 1, streak = 0, newPosts }) => {
   const offs = feedOffsets(items);
+  const alpha = useContext(AlphaCtx);
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: SCREEN_W, height: SCREEN_H }}>
       {/* screen */}
-      <div style={{ position: "absolute", inset: 0, borderRadius: 55, overflow: "hidden", background: C.bg, boxShadow: `0 0 0 0.6px rgba(255,255,255,${0.16 * screenOn})` }}>
+      <div style={{ position: "absolute", inset: 0, borderRadius: 55, overflow: "hidden", background: alpha ? "transparent" : C.bg, boxShadow: `0 0 0 0.6px rgba(255,255,255,${0.16 * screenOn})` }}>
         <div style={{ position: "absolute", inset: 0, filter: `brightness(${0.15 + 0.85 * screenOn})${streak ? " url(#vblur)" : ""}` }}>
           <div style={{ position: "absolute", left: 0, top: HEADER_H - scroll, width: SCREEN_W }}>
             {items.map((it, i) => (

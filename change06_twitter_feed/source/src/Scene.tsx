@@ -3,7 +3,7 @@ import { AbsoluteFill } from "remotion";
 import { FONT } from "./ui/layout";
 import { XLogo } from "./ui/icons";
 import { FeedItem, feedOffsets, HEADER_H, Phone } from "./ui/Phone";
-import { CW, POSTS, PostKey } from "./ui/Post";
+import { AlphaCtx, CW, POSTS, PostKey } from "./ui/Post";
 
 export type Cam = {
   ax: number; // point on the screen (pts) placed at frame centre
@@ -48,8 +48,9 @@ export const scrollTo = (items: FeedItem[], k: PostKey, screenY: number, part: "
 
 export const Scene: React.FC<{ s: SceneState; label?: string }> = ({ s, label }) => {
   const { cam } = s;
+  const alpha = React.useContext(AlphaCtx);
   return (
-    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: alpha ? "transparent" : "#000", overflow: "hidden" }}>
       <div
         style={{
           position: "absolute",
