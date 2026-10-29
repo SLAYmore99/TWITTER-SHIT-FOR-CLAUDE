@@ -3,7 +3,11 @@ import { FeedItem } from "./ui/Phone";
 import { PostKey, PostLook } from "./ui/Post";
 
 // One continuous feed, in scroll order.
-export const ORDER: PostKey[] = ["noisy", "viipin", "intcyber", "deronin", "olehmann", "humza", "himanshu", "finn", "nero", "mike"];
+// Heroes (the posts we stop on) with blurred filler posts between them, so every
+// scroll travels through the feed like ref03. Fillers repeat; they're never read.
+export const HEROES: PostKey[] = ["noisy", "viipin", "intcyber", "deronin", "himanshu", "finn", "nero", "mike"];
+const FILL: PostKey[] = ["charlie", "olehmann", "humza"];
+export const ORDER: PostKey[] = HEROES.flatMap((h, i) => (i < HEROES.length - 1 ? [h, FILL[i % 3], FILL[(i + 1) % 3]] : [h]));
 
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {

@@ -4,10 +4,15 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
 
 ## Current state
 - Status: **key frames v2 sent** (2026-10-29), minimal redesign after Rachit's note on v1 ("phone much more minimal, everything looks chaotic"): `change06_twitter_feed/keyframes/v2/` (sheet `_sheet_v2.png`). v1 is superseded (kept in `keyframes/v1/`).
-- **540p preview v3 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v3_540p.mp4` (712 f = 29.7 s @ 23.976). Yellow #EEFF3A used throughout.
-- Shot order v3 (Rachit's list): X launch -> @noisyb0y1 "$2.4M at 18" -> @viipin8 "Even a 14-year-old" -> @IntCyberDigest "Software is dead" (holds) -> @DeRonin_ "$40k MRR, zero employees" -> overload -> hard cut "It's over." then its video -> @finnardley Kurzgesagt (text, then the video) -> @neropursue motion tools video -> @mimurchison with sound -> hard cut to line 11. Charlie is out of this cut (not in Rachit's list); if he comes back: text highlight only, never the org-chart image (Rachit, 2026-10-29).
-- Mike's clip v3: "how I'm using Claude Code / to run both my personal life and my company" (4.6 s, middle "as my primary system" removed). Video duration chips now count down the real remaining time while a clip plays.
-- Next: Rachit's notes on v3 + more posts, then the final ProRes 4444 alpha render.
+- **540p preview v4 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v4_540p.mp4` (630 f = 26.3 s @ 23.976, down from 29.7).
+- Rachit on v3: "the scroll is really bad; emulate Blur and Scroll Through 6-8 s; shorten a lot; keep only the best posts, the rest blurred and used to scroll through".
+- **The scroll, measured from ref03 at 7.29-8.9 s** (phase correlation, px/frame at 270p): still, then a 9-frame speed-up 1, 4, 9, 14, 22, 33, 48, 66, 84 to a peak of 92, then a long settle 88, 71, 60, 52, 48, 40 ... about 10% less each frame, done by ~41 f. It's asymmetric (fast in, very long soft out), not an ease in-out. Travel about 4 screen heights. Heavy vertical motion blur at speed (edge sharpness 3.4 to 0.4). Out-of-focus cards stay blurred and visible even when still. No camera zoom: only the feed moves. The next post is readable while the tail still creeps.
+- v4 uses that exact curve as the scroll ease (`REF` table in `source/src/timeline.ts`); my render measures 1, 4, 9, 16, 24 ... 88 at peak, then 16, 15, 13, 12 ... (matches).
+- **Grid:** heroes = noisy, viipin, intcyber, deronin, himanshu, finn, nero, mike. Between every two heroes, 2 blurred filler posts (charlie, olehmann, humza, repeated), so each scroll travels through the feed. Fillers are never read. When Rachit picks the best posts, the rest become fillers.
+- Rest state = 32% opacity + 3.2 pt blur (visible but soft, ref03). Motion blur follows scroll speed, up to 24 pt.
+- Cut for length: overload pill and flashes removed. The "It's over." hard cut now lands on the speed peak of a scroll that starts building out of the DeRonin post.
+- Timeline rebuilt as independent tracks (scroll, camera, each post's fade/blur/dim/marker/media), so the next post's dim and marker can start while the scroll tail is still settling.
+- Next: Rachit picks the best posts, notes on v4, then the final ProRes 4444 alpha render.
 
 ## Rachit's notes on preview v1 (2026-10-29) and what v2 does
 - "The swipe up between posts looks cheap; I want the smooth scroll through Twitter; perfectly eased in and out." The v1 scroll used a fast-start "catch" curve (one-frame jumps of 38-81 grey levels, measured). v2: every scroll is a symmetric ease in-out (bezier 0.7,0,0.3,1, about 18 f). Mid-scroll the camera eases out 9% and the passing posts come up to about 40% (feel the feed, ref02/ref03). Vertical motion blur follows scroll speed, capped low. The frame-diff scan now shows smooth ramps only; the only hard jumps are the planned 2-frame flashes.
