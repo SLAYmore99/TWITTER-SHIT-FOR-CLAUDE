@@ -1,7 +1,7 @@
 import React from "react";
 import { Video } from "@remotion/media";
 import { createContext, useContext } from "react";
-import { Img, Loop, Sequence, staticFile } from "remotion";
+import { Img, Loop, Sequence, staticFile, useCurrentFrame } from "remotion";
 import posts from "../posts.json";
 import { BODY, FONT, inRange, Line, rangeOf, wrap } from "./layout";
 import { Bookmark, C, Like, More, Muted, Reply, Repost, Share, Verified, Views } from "./icons";
@@ -12,7 +12,7 @@ export type PostData = (typeof posts)["noisy"] & {
 export type PostKey = keyof typeof posts;
 
 // Which post videos play, and when (keyed by post id). Empty = posters only.
-export type PlayWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; durationInFrames?: number };
+export type PlayWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; durationInFrames?: number; clock?: [number, number] };
 export const PlayCtx = createContext<Record<string, PlayWin>>({});
 export const POSTS = posts as unknown as Record<PostKey, PostData>;
 
@@ -149,6 +149,15 @@ const Media: React.FC<{ p: PostData; top: number; h: number; look: PostLook; dim
   }
   const s = 1 + 0.0 * (look.mediaP ?? 0);
   const win = useContext(PlayCtx)[p.id];
+  const frame = useCurrentFrame();
+  // remaining time, counting down once the clip plays (X shows time left)
+  let chip = m.dur;
+  if (win?.clock) {
+    const [start, total] = win.clock;
+    const left = Math.max(0, total - start - Math.max(0, frame - win.from) / (24000 / 1001));
+    const h = Math.floor(left / 3600), mm = Math.floor((left % 3600) / 60), ss = Math.floor(left % 60);
+    chip = h ? `${h}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}` : `${mm}:${String(ss).padStart(2, "0")}`;
+  }
   return (
     <div style={box}>
       <Img src={staticFile(m.src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(s) }} />
@@ -165,7 +174,7 @@ const Media: React.FC<{ p: PostData; top: number; h: number; look: PostLook; dim
       )}
       {m.type === "video" && (
         <>
-          <div style={{ position: "absolute", left: 8, bottom: 8, padding: "1px 5px", borderRadius: 4, background: "rgba(0,0,0,0.75)", font: `500 12px/16px ${FONT}`, color: "#fff" }}>{m.dur}</div>
+          <div style={{ position: "absolute", left: 8, bottom: 8, padding: "1px 5px", borderRadius: 4, background: "rgba(0,0,0,0.75)", font: `500 12px/16px ${FONT}`, color: "#fff" }}>{chip}</div>
           <div style={{ position: "absolute", right: 8, bottom: 8, width: 24, height: 24, borderRadius: 12, background: "rgba(0,0,0,0.75)", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Muted />
           </div>

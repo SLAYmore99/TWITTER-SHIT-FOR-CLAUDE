@@ -3,7 +3,7 @@ import { FeedItem } from "./ui/Phone";
 import { PostKey, PostLook } from "./ui/Post";
 
 // One continuous feed, in scroll order.
-export const ORDER: PostKey[] = ["noisy", "viipin", "charlie", "mike", "deronin", "nero", "finn", "olehmann", "humza", "himanshu", "intcyber"];
+export const ORDER: PostKey[] = ["noisy", "viipin", "intcyber", "deronin", "olehmann", "humza", "himanshu", "finn", "nero", "mike"];
 
 // Key text per post (from Rachit). lit = stays white, bar = highlighter.
 export const KEY: Partial<Record<PostKey, PostLook>> = {
@@ -110,4 +110,5 @@ const mk = (): KF[] => {
   return out;
 };
 
-export const KEYFRAMES = mk();
+// v1/v2 key-frame sheet (old order); built on demand only.
+export const getKeyframes = () => mk();

@@ -4,8 +4,10 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
 
 ## Current state
 - Status: **key frames v2 sent** (2026-10-29), minimal redesign after Rachit's note on v1 ("phone much more minimal, everything looks chaotic"): `change06_twitter_feed/keyframes/v2/` (sheet `_sheet_v2.png`). v1 is superseded (kept in `keyframes/v1/`).
-- **540p preview v2 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v2_540p.mp4` (784 f = 32.7 s @ 23.976). Highlight colour check: `previews/yellow_highlight_check.png` (#EEFF3A, waiting for Rachit's OK or his colour code).
-- Next: Rachit's notes on v2 + more posts from him, then the final ProRes 4444 alpha render.
+- **540p preview v3 sent** (2026-10-29): `change06_twitter_feed/previews/twitter_feed_preview_v3_540p.mp4` (712 f = 29.7 s @ 23.976). Yellow #EEFF3A used throughout.
+- Shot order v3 (Rachit's list): X launch -> @noisyb0y1 "$2.4M at 18" -> @viipin8 "Even a 14-year-old" -> @IntCyberDigest "Software is dead" (holds) -> @DeRonin_ "$40k MRR, zero employees" -> overload -> hard cut "It's over." then its video -> @finnardley Kurzgesagt (text, then the video) -> @neropursue motion tools video -> @mimurchison with sound -> hard cut to line 11. Charlie is out of this cut (not in Rachit's list); if he comes back: text highlight only, never the org-chart image (Rachit, 2026-10-29).
+- Mike's clip v3: "how I'm using Claude Code / to run both my personal life and my company" (4.6 s, middle "as my primary system" removed). Video duration chips now count down the real remaining time while a clip plays.
+- Next: Rachit's notes on v3 + more posts, then the final ProRes 4444 alpha render.
 
 ## Rachit's notes on preview v1 (2026-10-29) and what v2 does
 - "The swipe up between posts looks cheap; I want the smooth scroll through Twitter; perfectly eased in and out." The v1 scroll used a fast-start "catch" curve (one-frame jumps of 38-81 grey levels, measured). v2: every scroll is a symmetric ease in-out (bezier 0.7,0,0.3,1, about 18 f). Mid-scroll the camera eases out 9% and the passing posts come up to about 40% (feel the feed, ref02/ref03). Vertical motion blur follows scroll speed, capped low. The frame-diff scan now shows smooth ramps only; the only hard jumps are the planned 2-frame flashes.

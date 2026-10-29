@@ -72,77 +72,76 @@ const scrollToPost = (f: number, from: PostKey, k: PostKey, cam: Cam3, part: "te
 at(0, {});
 at(7, { splash: { opacity: 1, scale: 1 } }, E.out);
 hold(14);
-// logo dissolves, the first post racks into focus at reading size, centred
 at(22, { splash: { opacity: 0, scale: 1.05 } }, E.inout); // the logo leaves first
 at(36, { world: { opacity: 1, blur: 0 }, cam: read(), posts: { noisy: { ...IN } } }, E.out); // then the post racks into focus
-// 02  read: rest of its text dims, marker
+// 02  $2.4M at 18
 dimIn(44, "noisy");
 sweep(58, "noisy");
 hold(70);
-// 03  viipin
+// 03  even a 14-year-old
 scrollToPost(88, "noisy", "viipin", read(READ, 30));
 dimIn(96, "viipin");
 sweep(110, "viipin");
 hold(126);
-// 04  charlie: no highlight, just read and move on
-scrollToPost(144, "viipin", "charlie", read(READ, 60));
-hold(164);
-// 05  mike: the video, sound on (clip 174 f from 194)
-scrollToPost(186, "charlie", "mike", read(3.2), "media", 0);
-dimIn(196, "mike", 1);
-at(368, { cam: read(3.4) }, E.linear);
-// 06  deronin article
-scrollToPost(388, "mike", "deronin", read(READ, 20), "media", 0);
-dimIn(394, "deronin", 1);
-sweep(404, "deronin");
-hold(420);
-// 07  nero video
-scrollToPost(440, "deronin", "nero", read(3.2), "media");
-dimIn(450, "nero", 1);
-at(486, { cam: read(3.3) }, E.linear);
-// 08  finn: text only (no push into the AI video)
-scrollToPost(506, "nero", "finn", read(READ, 50), "text", 0);
-dimIn(514, "finn");
-sweep(528, "finn");
-hold(544);
-// 09  overload: ease out to a wider view, then a long scroll that keeps building
-at(560, { cam: read(2.0), rest: 0.4, restBlur: 0.6, posts: all({ fade: 0.4, dim: 0, barP: 0, blur: 0.6 }) }, E.inout);
-at(600, { scroll: scrollTo(ITEMS, "himanshu", MID + 120, "text"), pill: "99+ new posts" }, E.accel);
-// 10  hard cut on the speed peak: It's over. Text first, media hidden.
+// 04  software is dead (it holds)
+scrollToPost(144, "viipin", "intcyber", read(READ, 40));
+dimIn(152, "intcyber");
+sweep(166, "intcyber");
+hold(192);
+// 05  $40k MRR, zero employees
+scrollToPost(210, "intcyber", "deronin", read(READ, 20), "media");
+dimIn(216, "deronin", 1);
+sweep(230, "deronin");
+hold(246);
+// 06  overload: ease out wider, a long scroll that keeps building
+at(262, { cam: read(2.0), rest: 0.4, restBlur: 0.6, posts: all({ fade: 0.4, dim: 0, barP: 0, blur: 0.6 }) }, E.inout);
+at(302, { scroll: scrollTo(ITEMS, "himanshu", MID + 120, "text"), pill: "99+ new posts" }, E.accel);
+// 07  hard cut on the speed peak: It's over. The text alone, then its video
 const overAy = aim(ITEMS, "himanshu", to("himanshu"), "text").ay;
-at(601, { cam: { ax: 68 + 36, ay: overAy, zoom: 6.2 }, scroll: to("himanshu"), rest: 0, restBlur: 2.5, pill: undefined, posts: { ...all({ fade: 0, dim: 0, barP: 0, blur: 2.5 }), himanshu: { ...IN, dim: 1, mediaOpacity: 0 } } }, E.linear, { cut: true });
-hold(605);
-sweep(619, "himanshu", { mediaOpacity: 0 });
-hold(640);
-// then the camera eases down onto the video as it fades up
-at(668, { scroll: to("himanshu", "media"), cam: read(READ), posts: { himanshu: { ...IN, dim: 1, barP: 1, mediaOpacity: 1 } } }, E.inout);
-hold(700);
-// 11  Software is dead. The last word.
-scrollToPost(720, "himanshu", "intcyber", read(READ, 40));
-dimIn(728, "intcyber");
-sweep(742, "intcyber");
-hold(784);
-export const DURATION = 784;
+at(303, { cam: { ax: 68 + 36, ay: overAy, zoom: 6.2 }, scroll: to("himanshu"), rest: 0.1, restBlur: 2.5, pill: undefined, posts: { ...all({ fade: 0, dim: 0, barP: 0, blur: 2.5 }), himanshu: { ...IN, dim: 1, mediaOpacity: 0 } } }, E.linear, { cut: true });
+hold(307);
+sweep(321, "himanshu", { mediaOpacity: 0 });
+hold(342);
+at(370, { scroll: to("himanshu", "media"), cam: read(READ), posts: { himanshu: { ...IN, dim: 1, barP: 1, mediaOpacity: 1 } } }, E.inout);
+hold(400);
+// 08  kurzgesagt: text, then the camera eases down onto the video
+scrollToPost(420, "himanshu", "finn", read(READ, 50));
+dimIn(428, "finn");
+sweep(442, "finn");
+hold(456);
+at(474, { scroll: to("finn", "media"), cam: read(READ), posts: { finn: { ...IN, dim: 1, barP: 1, mediaOpacity: 1 } } }, E.inout);
+hold(506);
+// 09  the motion tools video
+scrollToPost(526, "finn", "nero", read(3.2), "media");
+dimIn(534, "nero", 1);
+at(572, { cam: read(3.3) }, E.linear);
+// 10  mike, sound on (4.6 s = 110 f from 600), then hard cut out
+scrollToPost(592, "nero", "mike", read(3.2), "media", 0);
+dimIn(600, "mike", 1);
+at(712, { cam: read(3.4) }, E.linear);
+export const DURATION = 712;
 
 // pill counts up through the overload (stepped, like the app)
-const PILL: [number, string][] = [[566, "3 new posts"], [576, "12 new posts"], [584, "48 new posts"], [592, "99+ new posts"]];
+const PILL: [number, string][] = [[268, "3 new posts"], [278, "12 new posts"], [286, "48 new posts"], [294, "99+ new posts"]];
 
 // 2-frame flashes inside the overload: hard cuts to single lines
 type Flash = { from: number; to: number; k: PostKey };
 const FLASHES: Flash[] = [
-  { from: 578, to: 580, k: "olehmann" },
-  { from: 588, to: 590, k: "humza" },
+  { from: 280, to: 282, k: "olehmann" },
+  { from: 290, to: 292, k: "humza" },
 ];
 
 // Media playing windows (composition frames). trimBefore is in the clip's own frames.
-export type MediaWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number };
+// Media playing windows (composition frames). trimBefore is in the clip's own frames.
+// clock = [seconds into the ORIGINAL video where the clip starts, original length]
+// so the duration chip counts down the real remaining time, like X.
+export type MediaWin = { src: string; from: number; trimBefore?: number; loop?: boolean; volume?: number; clock?: [number, number] };
 export const MEDIA: Partial<Record<PostKey, MediaWin>> = {
-  noisy: { src: "vid/noisy.mp4", from: 40 },
-  charlie: { src: "vid/charlie.mp4", from: 140, loop: true },
-  mike: { src: "vid/mike_tight.mp4", from: 194, volume: 1 },
-  nero: { src: "vid/nero.mp4", from: 446, trimBefore: Math.round(2.6 * FPS) },
-  finn: { src: "vid/finn.mp4", from: 512, trimBefore: Math.round(2.0 * FPS) },
-  himanshu: { src: "vid/himanshu.mp4", from: 646 },
+  noisy: { src: "vid/noisy.mp4", from: 40, clock: [1, 4129.3] },
+  himanshu: { src: "vid/himanshu.mp4", from: 348, clock: [0, 37.7] },
+  finn: { src: "vid/finn.mp4", from: 426, trimBefore: Math.round(2.0 * FPS), clock: [4, 30.22] },
+  nero: { src: "vid/nero.mp4", from: 530, trimBefore: Math.round(2.6 * FPS), clock: [9.6, 28.35] },
+  mike: { src: "vid/mike_tight.mp4", from: 600, volume: 1, clock: [22.7, 1162.9] },
 };
 
 // ---- evaluation ----------------------------------------------------------
@@ -203,6 +202,6 @@ export const stateAt = (f: number): SceneState => {
   // motion blur follows scroll speed (pts/frame), vertical only, subtle
   const v = Math.abs(evalAt(f + 0.5).s.scroll - evalAt(f - 0.5).s.scroll);
   const streak = Math.min(1.6, Math.max(0, (v - 8) * 0.035));
-  const pill = f >= 566 && f < 601 ? [...PILL].reverse().find(([pf]) => f >= pf)?.[1] : undefined;
+  const pill = f >= 268 && f < 303 ? [...PILL].reverse().find(([pf]) => f >= pf)?.[1] : undefined;
   return toScene(e, streak, pill);
 };
