@@ -17,6 +17,8 @@ export const Montage: React.FC<{ transparent?: boolean }> = () => {
     <PlayCtx.Provider value={play}>
       <Scene s={stateAt(f)} />
       {/* line 10 of the VO from his current version (cut before line 11 starts) */}
+      {/* SFX stem (sfx.py): whooshes driven by the scroll curve, soft ticks on highlights */}
+      <Audio src={staticFile("sfx_stem.wav")} />
       <Audio src={staticFile("vo_line10.wav")} volume={(t) => interpolate(t, [0, 70, 80], [1, 1, 0], { extrapolateRight: "clamp" })} />
     </PlayCtx.Provider>
   );
