@@ -3,16 +3,22 @@
 Whooshes are driven by the same measured ref03 scroll curve as the animation
 (timeline.ts REF table), so their swell and long settle line up frame-exact.
 Ticks mark each highlight start, and a soft tap marks the slide-up open.
-Run:  python3 sfx.py   ->  public/sfx_stem.wav  (48 kHz stereo, 24-bit)
+Run:  python3 sfx.py [beats.json] [out.wav]
+      python3 sfx.py                                          -> public/sfx_stem.wav (v9, 12 s)
+      python3 sfx.py src/beats_9s.json public/sfx_stem_9s.wav -> the 9 s option
+(48 kHz stereo, 24-bit)
 """
 import json
+import sys
 import wave
 
 import numpy as np
 
 SR = 48000
 FPS = 24000 / 1001
-BEATS = json.load(open("src/beats.json"))
+BEATS = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "src/beats.json"))
+OUT = sys.argv[2] if len(sys.argv) > 2 else "public/sfx_stem.wav"
+MARK_AT = BEATS.get("markAt", 0.8)
 DUR_F = BEATS["end"]
 N = int(round(DUR_F / FPS * SR))
 rng = np.random.default_rng(7)
@@ -22,7 +28,7 @@ REF = np.array([0, 1, 5, 14, 28, 50, 83, 131, 197, 281, 373, 461, 532, 592, 644,
 
 # scrolls, inner scrolls and marker starts, from the same beats.json as the animation
 SCROLLS = [(b["f"], b["n"], 1.0) for b in BEATS["scrolls"]] + [(b["f"], b["n"], 0.55) for b in BEATS["inner"]]
-TICKS = [b["f"] + round(b["n"] * 0.8) for b in BEATS["scrolls"] if b["to"] != "nero"]  # highlight starts
+TICKS = [b["f"] + round(b["n"] * MARK_AT) for b in BEATS["scrolls"] if b["to"] != "nero"]  # highlight starts
 TAPS = [0]  # slide-up open
 
 
@@ -139,9 +145,9 @@ out[-fade:] *= np.linspace(1, 0, fade)[:, None]
 pcm = (np.clip(out, -1, 1) * (2**23 - 1)).astype("<i4")
 b = pcm.astype("<i4").tobytes()
 b24 = b"".join(b[i : i + 3] for i in range(0, len(b), 4))
-with wave.open("public/sfx_stem.wav", "wb") as w:
+with wave.open(OUT, "wb") as w:
     w.setnchannels(2)
     w.setsampwidth(3)
     w.setframerate(SR)
     w.writeframes(b24)
-print("public/sfx_stem.wav", N / SR, "s")
+print(OUT, N / SR, "s")

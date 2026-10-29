@@ -1,0 +1,17 @@
+{
+  "_": "9 s option (Rachit, 2026-10-29). Same shots as beats.json (v9, 12 s): opening, video windows and holds trimmed; scrolls only 2-4 f shorter so they stay calm. Marker starts at 0.75 of each scroll.",
+  "end": 215,
+  "sweep": 10,
+  "markAt": 0.75,
+  "scrolls": [
+    { "f": 14, "n": 24, "from": "rock", "to": "viipin" },
+    { "f": 50, "n": 24, "from": "viipin", "to": "nero", "part": "media" },
+    { "f": 76, "n": 26, "from": "nero", "to": "intcyber", "dy": -100 },
+    { "f": 114, "n": 24, "from": "intcyber", "to": "himanshu" },
+    { "f": 165, "n": 24, "from": "himanshu", "to": "imryven" }
+  ],
+  "inner": [
+    { "f": 150, "n": 14, "k": "himanshu" },
+    { "f": 201, "n": 14, "k": "imryven" }
+  ]
+}

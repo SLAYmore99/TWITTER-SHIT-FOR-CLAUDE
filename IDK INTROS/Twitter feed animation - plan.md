@@ -21,6 +21,7 @@ Plan v1 (2026-10-29) for animation #2 of the Claude Nine intro ([[Intro animatio
   - `twitter_feed_v9_alpha_prores4444.mov` (sent in chat, not in git: 380 MB): ProRes 4444 with alpha (yuva444p12le), no audio, no background (corners alpha 0, about 59% fully clear); posts and cards are drawn without the black behind them. Sent as 4 binary parts (.part0-3) + `JOIN_ON_WINDOWS.bat` (copy /b, then certutil MD5); md5 b82438d3dcde625965509d11878cde61, rejoin checked here.
   - `final/twitter_feed_v9_sfx_stem.wav`: SFX on its own track (48 kHz, 24-bit).
   - Font is still Inter (no Chirp supplied).
+- **9 s option (2026-10-29), Rachit: "reduce the overall time to 9 seconds, just as an option".** Same shots and order as v9; v9 (12 s) is untouched. Beats in `source/src/beats_9s.json` (compositions `TwitterFeed9s` / `TwitterFeed9sAlpha`); the timeline is now built per beats file (`CUTS.v12`, `CUTS.v9s` in `timeline.ts`), and `sfx.py` takes the beats file too. Cuts: opening 20 -> 14 f, scrolls only 2-4 f shorter (24-26 f, still calm), marker starts at 0.75 of the scroll, sweep 12 -> 10 f, holds about 8 f. Measured: highlights on screen 0.9-1.5 s with about 0.45 s steady hold (v9: about 0.6 s); no stray jumps. Files: `final/twitter_feed_v9_9s_1080p.mp4` (215 f = 8.97 s, VO + SFX), `final/twitter_feed_v9_9s_sfx_stem.wav`, ProRes 4444 alpha .mov sent in 3 parts (md5 284e500363cff594ad72b5cd47744786).
 - Next: Rachit drops it into the edit; option 2 later (option 1 = git tag `option1-v8b` + this commit).
 
 ## Rachit's notes on preview v1 (2026-10-29) and what v2 does
